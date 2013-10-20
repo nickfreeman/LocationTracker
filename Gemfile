@@ -5,23 +5,8 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# for Heroku deployment - as described in Ap. A of ELLS book
-group :development, :test do
-  gem 'sqlite3'
-  gem 'ruby-debug19'
-  gem 'database_cleaner'
-  gem 'capybara'
-  gem 'rspec-rails'
-  gem 'launchy'
-end
+gem 'sqlite3'
 
-group :test do
-    gem 'cucumber-rails'
-end
-
-group :production do
-  gem 'pg'
-end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,7 +21,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'haml'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -52,3 +36,17 @@ gem 'haml'
 
 # To use debugger
 # gem 'debugger'
+
+#use Haml for templates
+gem 'haml'
+#use Ruby debuggger
+group :development, :test do
+  gem 'debugger'
+  gem 'rspec-rails'
+  gem 'ZenTest'
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
+end
