@@ -5,8 +5,23 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#use Ruby debuggger
+# for Heroku deployment - as described in Ap. A of ELLS book
+group :development, :test do
+  gem 'sqlite3'
+  gem 'debugger'
+  gem 'rspec-rails'
+  gem 'ZenTest'
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
+end
 
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,14 +54,3 @@ gem 'jquery-rails'
 
 #use Haml for templates
 gem 'haml'
-#use Ruby debuggger
-group :development, :test do
-  gem 'debugger'
-  gem 'rspec-rails'
-  gem 'ZenTest'
-  gem 'cucumber-rails'
-  gem 'cucumber-rails-training-wheels'
-  gem 'database_cleaner'
-  gem 'capybara'
-  gem 'launchy'
-end
