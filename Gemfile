@@ -9,6 +9,14 @@ gem 'rails', '3.2.14'
 group :development, :test do
   gem 'sqlite3'
   gem 'ruby-debug19'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'launchy'
+end
+
+group :test do
+    gem 'cucumber-rails'
 end
 
 group :production do
