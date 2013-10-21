@@ -25,4 +25,4 @@ Given empty database
 
 Scenario: Request Location should say no member active
  When I press "Request Location"
- Then I should see "No active member in field"
+ Then I should see no active member in field
