@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "system@bamru.com"
+  default from: "localhost"
 
 	def seek_email(member)
 		@user = member
