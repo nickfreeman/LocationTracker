@@ -21,10 +21,11 @@ Scenario: Clicking "Where Are You" button sends email to another specific member
  When I press "Where Are You"
  Then I should see Successfully Sent 
 
-Given empty database
+
 
 Scenario: Clicking "Where Are You" button sends email to another specific member requesting the member's location
- 
+
+Given empty database
  When I press "Where Are You"
  Then I should see No members available
 
