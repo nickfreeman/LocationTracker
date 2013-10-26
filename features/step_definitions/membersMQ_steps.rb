@@ -1,5 +1,5 @@
 Given /the following member info exist/ do |member_table|
-  emails_table.hashes.each do |member|
+  member_table.hashes.each do |member|
     Member.create(member)
   end
 end

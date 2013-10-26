@@ -1,6 +1,6 @@
-Given /the following member info exist/ do |emails_table|
-  emails_table.hashes.each do |email|
-    Email.create(email)
+Given /the following member info exist/ do |member_table|
+  emails_table.hashes.each do |member|
+    Member.create(member)
   end
 end
 

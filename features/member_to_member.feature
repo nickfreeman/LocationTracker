@@ -7,7 +7,7 @@ Feature: Send another member an email to get his location and distance/time
 Background: field member's information has been added to database
 
  Given the following member info exist:
- | Name           | Email                    | Role  |
+ | name           | email                    | role  |
  | Shaumik Mondal | shaumik@berkeley.edu     | field |
  | Yina Jin       | yinajin@berkeley.edu     | field |
  | Nick Freeman   | nickfreeman@berkeley.edu | AHC   |
