@@ -17,12 +17,12 @@
       %th Role
       %th Send To
   %tbody
-      = form_tag result_path, :method => :get, :id => 'MMQ_result' do
-  	Include: 
-    	- @members.each do |member|
-      	  %tr
-	    %td= member.name
-	    %td= member.email
-	    %td= member.role
-	    %td = check_box_tag 
-      = submit_tag 'Where Are You', :id => 'member_to_member_query_sent'
+    = form_tag response_members_path, :method => :get, :id => 'MMQ_result' do
+    Include: 
+    - @members.each do |member|
+      %tr
+        %td= member.name
+        %td= member.email
+        %td= member.role
+        %td = check_box_tag 
+    = submit_tag 'Where Are You', :id => 'member_to_member_query_sent'

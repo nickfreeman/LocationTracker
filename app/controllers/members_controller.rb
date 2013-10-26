@@ -1,5 +1,9 @@
 class MembersController < ApplicationController
 
+
+  def response
+ 
+  end
   def show
   end
 
