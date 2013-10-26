@@ -10,5 +10,6 @@ class MembersController < ApplicationController
   end
 
   def create
-    @member = Movie.create!(params[:member])
+    @member = Member.create!(params[:member])
   end
+end
