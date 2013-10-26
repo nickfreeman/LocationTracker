@@ -1,9 +1,6 @@
 Given /the following member info exist/ do |member_table|
   member_table.hashes.each do |member|
-    member.name = "Shaumik Mondal"
-    member.email = "shaumik@berkeley.edu"
-    memeber.role = "god"
-    Member.create(member)
+    Member.create!(member)
   end
 end
 
