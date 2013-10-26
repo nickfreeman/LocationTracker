@@ -14,6 +14,12 @@ class MembersController < ApplicationController
   end
 
   def create
-    @member = Member.create!(params[:member])
+    @members = Member.create!(params[:member])
   end
+
+	def email
+		@members.each |member|
+			UserMailer.seek_email(member).deliver
+	end
+
 end
