@@ -53,5 +53,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+# Use devise for login
+gem 'devise'
+
 #use Haml for templates
 gem 'haml'
