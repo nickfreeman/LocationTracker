@@ -2,19 +2,4 @@
 
 %h1 Member to Member Query
 
-%table#members
-  %thead
-    %tr
-      %th Name
-      %th Email
-      %th Role
-      %th Send To
-      %th @members
-  %tbody
-    - @members.each do |member|
-      %tr
-        %td= member.name
-        %td= member.email
-        %td= member.role
-        %td = check_box_tag 
-    = submit_tag 'Where Are You', :id => 'member_to_member_query_sent'
+

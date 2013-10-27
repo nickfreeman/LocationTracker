@@ -1,14 +1,12 @@
 class MembersController < ApplicationController
 
 
-  def response
- 
-  end
+
   def show
   end
 
   def index
-		@members = Member.find(:all)
+    @members = Member.all
   end
 
   def new
@@ -16,11 +14,7 @@ class MembersController < ApplicationController
 
   def create
     @members = Member.create!(params[:member])
+    redirect_to members_path
   end
-
-	def email
-		@members.each |member|
-			UserMailer.seek_email(member).deliver
-	end
 
 end
