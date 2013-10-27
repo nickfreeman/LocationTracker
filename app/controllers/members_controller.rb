@@ -8,6 +8,7 @@ class MembersController < ApplicationController
   end
 
   def index
+		@members = Member.find(:all)
   end
 
   def new

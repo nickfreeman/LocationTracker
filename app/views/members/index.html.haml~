@@ -1,14 +1,7 @@
 -#  This file is app/views/members/index.html.haml
 
 %h1 Member to Member Query
-<!--
-= form_tag movies_path, :method => :get, :id => 'ratings_form' do
-  Include: 
-  - @all_ratings.each do |rating|
-    = rating
-    = check_box_tag "ratings[#{rating}]", 1, @selected_ratings.include?(rating), :id => "ratings_#{rating}"
-  = submit_tag 'Refresh', :id => 'ratings_submit'
-//-->
+
 %table#members
   %thead
     %tr
@@ -16,9 +9,8 @@
       %th Email
       %th Role
       %th Send To
+      %th @members
   %tbody
-    = form_tag response_members_path, :method => :get, :id => 'MMQ_result' do
-    Include: 
     - @members.each do |member|
       %tr
         %td= member.name
