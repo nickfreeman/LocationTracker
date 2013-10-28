@@ -1,6 +1,12 @@
 %h1 Successfully Sent
 
 %b following people received emails:
-- @members.each do |member|
-    %td= member.name
-    %td= member.email
+%table#members
+ %thead
+  %tr
+   %th Name
+   %th Email
+ %tbody
+  - @members.each do |member|
+   %td= member.name
+   %td= member.email
