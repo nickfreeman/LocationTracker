@@ -6,7 +6,10 @@ class MembersController < ApplicationController
   end
 
   def index
-
+    @members = Member.all
+    if @members == nil
+       flash[:notice] = "No members available."
+    end
   end
 
   def new
