@@ -8,12 +8,13 @@
       %th Name
       %th Email
       %th Role
-      %th Send To
+
   %tbody
     - @members.each do |member|
       %tr
         %td= member.name
         %td= member.email
         %td= member.role
-        %td = check_box_tag 
-    = submit_tag 'Where Are You', :id => 'member_to_member_query_sent'
+
+= form_tag "/members/show", :method => :get, :id => 'send_form' do 
+  = submit_tag 'Send Request', :id => 'request_sent'

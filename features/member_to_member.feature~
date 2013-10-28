@@ -14,17 +14,16 @@ Background: field member's information has been added to database
  | Yeung John Li  | liyeungjohn@berkeley.edu | field |
  | James	  | james@berkeley.edu 	     | AHC   |
 
- And I am a logged in member
 
-Scenario: Clicking "Where Are You" button sends email to another specific member requesting the member's location
+Scenario: Clicking "Send Request" button sends email to another specific member requesting the member's location
  
- When I press "Where Are You"
- Then I should see Successfully Sent 
+ When I press "Send Request"
+ Then I should see "Successfully Sent" 
+
+
+
+Scenario: Clicking "Send Request" button sends email to another specific member requesting the member's location
 
 Given empty database
-
-Scenario: Clicking "Where Are You" button sends email to another specific member requesting the member's location
- 
- When I press "Where Are You"
- Then I should see No members available
+ Then I should see "No members available"
 
