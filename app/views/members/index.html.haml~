@@ -2,4 +2,19 @@
 
 %h1 Member to Member Query
 
+%table#members
+  %thead
+    %tr
+      %th Name
+      %th Email
+      %th Role
 
+  %tbody
+    - @members.each do |member|
+      %tr
+        %td= member.name
+        %td= member.email
+        %td= member.role
+
+= form_tag "/members/show", :method => :get, :id => 'send_form' do 
+  = submit_tag 'Send Request', :id => 'request_sent'

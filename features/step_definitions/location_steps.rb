@@ -1,4 +1,4 @@
-Given /I am logged in as a member/
+Given /I am logged in as a member/ do
 	#Integrate this with the member stuff later
 	#@user = Member.new
 end
