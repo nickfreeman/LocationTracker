@@ -43,7 +43,7 @@
                 %input.form-control{:placeholder => "Email", :type => "text"}
               .form-group
                 %input.form-control{:placeholder => "Password", :type => "password"}
-              %button.btn.btn-success{:type => "submit"} Sign in
+              %button.btn.btn-success{:type => "submit"}= link_to "Sign in", new_user_session_path
         / /.navbar-collapse
       / /container
       /
