@@ -1,8 +1,8 @@
 class MembersController < ApplicationController
 
   def show
-   @members = Member.all ##need to change this once the checkboxes to put in to select who to send it to
-		UserMailer.seek_email(@members).deliver
+   #@members = Member.all ##need to change this once the checkboxes to put in to select who to send it to
+   #UserMailer.seek_email(@members).deliver
   end
 
   def index
@@ -20,10 +20,10 @@ class MembersController < ApplicationController
     redirect_to members_path
   end
 
-	#def email
-		#@members = Member.all
-		#UserMailer.seek_email(@members).deliver
-		#redirect_to members_path
-	#end
+	def email
+		@members = Member.all
+		UserMailer.seek_email(@members).deliver
+		redirect_to "/members#index"
+	end
 
 end

@@ -5,16 +5,19 @@ LocationTracker::Application.routes.draw do
   root :to => "home#index"
   devise_for :users
 
-  resources :members
+  #resources :members
+
   #resources :members do
     #collection do
       #get 'email'
     #end
   #end
 
-  #resources :members do
-      #get 'email'
-  #end
+  resources :members do
+    collection do
+      get 'email'
+    end
+  end
 
   #match "members/email" => "Member#email"  
 
