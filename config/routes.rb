@@ -12,6 +12,8 @@ LocationTracker::Application.routes.draw do
     end
   end
 
+  match "members/email" => "Member#email"  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   

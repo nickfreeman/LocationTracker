@@ -1,7 +1,5 @@
 class MembersController < ApplicationController
 
-
-
   def show
    @members = Member.all ##need to change this once the checkboxes to put in to select who to send it to
   end
@@ -20,5 +18,11 @@ class MembersController < ApplicationController
     @members = Member.create!(params[:member])
     redirect_to members_path
   end
+
+	def email
+		@members = Member.all
+		UserMailer.seek_email(@members).deliver
+		#redirect_to "members/show"
+	end
 
 end

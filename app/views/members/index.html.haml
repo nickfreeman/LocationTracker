@@ -16,5 +16,5 @@
         %td= member.email
         %td= member.role
 
-= form_tag "/members/show", :method => :get, :id => 'send_form' do 
+= form_tag "/members/email", :method => :post, :id => 'send_form' do 
   = submit_tag 'Send Request', :id => 'request_sent'

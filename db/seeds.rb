@@ -6,5 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Member.create!({:name => 'Yina', :email => 'solaris.jin@gmail.com', :role => 'goddess'})
+Member.create!({:name => 'Yina Jin', :email => 'solaris.jin@gmail.com', :role => 'goddess'})
+Member.create!({:name => 'Shaumik Mondal', :email => 'themaster_759@hotmail.com', :role => 'god'})
 
