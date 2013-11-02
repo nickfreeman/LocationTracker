@@ -22,7 +22,9 @@ class MembersController < ApplicationController
 
 	def email
 		@members = Member.all
-		UserMailer.seek_email(@members).deliver
+		@members.each do |member|
+			UserMailer.seek_email(member).deliver
+		end
 		redirect_to "/members#index"
 	end
 
