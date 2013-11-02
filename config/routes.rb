@@ -6,13 +6,17 @@ LocationTracker::Application.routes.draw do
   devise_for :users
 
   resources :members
-  resources :members do
-    collection do
-      get 'response'
-    end
-  end
+  #resources :members do
+    #collection do
+      #get 'email'
+    #end
+  #end
 
-  match "members/email" => "Member#email"  
+  #resources :members do
+      #get 'email'
+  #end
+
+  #match "members/email" => "Member#email"  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
