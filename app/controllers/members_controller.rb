@@ -1,15 +1,10 @@
 class MembersController < ApplicationController
 
   def show
-   #@members = Member.all ##need to change this once the checkboxes to put in to select who to send it to
-   #UserMailer.seek_email(@members).deliver
   end
 
   def index
     @members = Member.all
-    if @members == nil
-       flash[:notice] = "No members available."
-    end
   end
 
   def new
@@ -22,10 +17,15 @@ class MembersController < ApplicationController
 
 	def email
 		@members = Member.all
-		@members.each do |member|
-			UserMailer.seek_email(member).deliver
+		if @members.length == 2
+			flash[:notice] =  "No members available."
+			render "/index"
+		else
+			@members.each do |member|
+				UserMailer.seek_email(member).deliver
+			end
+			redirect_to "/success"
 		end
-		redirect_to "/members#index"
 	end
 
 end
