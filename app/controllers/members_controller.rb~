@@ -19,7 +19,7 @@ class MembersController < ApplicationController
 		@members = Member.all
 		if @members.length == 2
 			flash[:notice] =  "No members available."
-			redirect_to "/index"
+			render "/index"
 		else
 			@members.each do |member|
 				UserMailer.seek_email(member).deliver
