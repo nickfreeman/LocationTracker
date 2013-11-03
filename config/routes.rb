@@ -7,19 +7,12 @@ LocationTracker::Application.routes.draw do
 
   #resources :members
 
-  #resources :members do
-    #collection do
-      #get 'email'
-    #end
-  #end
-
   resources :members do
     collection do
       get 'email'
     end
   end
 
-  #match "members/email" => "Member#email"  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
