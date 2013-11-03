@@ -4,14 +4,14 @@ class MembersController < ApplicationController
   end
 
   def index
-    @members = Member.all
+    @members = User.all
   end
 
   def new
   end
 
   def create
-    @members = Member.create!(params[:member])
+    @members = User.create!(params[:member])
     redirect_to members_path
   end
 
@@ -28,12 +28,22 @@ class MembersController < ApplicationController
 		#end
 	#end
 
-	def email
-		@members = Member.all
-		@members.each do |member|
-			UserMailer.seek_email(member).deliver
+	def email		
+		@members = User.all
+		puts @members.length
+		if @members.length == 0
+			flash[:notice] = "No members available"
+			redirect_to "/members"
+		else
+			@members.each do |member|
+				UserMailer.seek_email(member).deliver
+			end
+			redirect_to "/members/success"
 		end
-		redirect_to "/members#index"
+	end
+	
+	def success
+		@members = User.all
 	end
 
 end

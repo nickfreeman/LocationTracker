@@ -10,6 +10,7 @@ LocationTracker::Application.routes.draw do
   resources :members do
     collection do
       get 'email'
+      get 'success'
     end
   end
 

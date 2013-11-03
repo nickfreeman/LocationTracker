@@ -1,20 +1,25 @@
 -#  This file is app/views/members/index.html.haml
 
+-if not flash.empty?
+	= flash.each do |key, value|
+		.alert{ :class => "alert-#{key}" }
+			= value
+
 %h1 Member to Member Query
 
 %table#members
-  %thead
-    %tr
-      %th Name
-      %th Email
-      %th Role
+	%thead
+		%tr
+			%th Name
+			%th Email
+			%th Role
 
-  %tbody
-    - @members.each do |member|
-      %tr
-        %td= member.name
-        %td= member.email
-        %td= member.role
+	%tbody
+		- @members.each do |member|
+			%tr
+				%td= member.name
+				%td= member.email
+				%td= member.role
 
-= form_tag "members#email", :method => :get, :id => 'send_form' do 
-  = submit_tag 'Send Request', :id => 'request_sent'
+= form_tag "members/email", :method => :get, :id => 'send_form' do 
+	= submit_tag 'Send Request', :id => 'request_sent'
