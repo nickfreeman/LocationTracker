@@ -1,6 +1,6 @@
 LocationTracker::Application.routes.draw do
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'home#show'
   end
   root :to => "home#index"
   devise_for :users
@@ -13,6 +13,8 @@ LocationTracker::Application.routes.draw do
       get 'success'
     end
   end
+
+  resources :locations
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
