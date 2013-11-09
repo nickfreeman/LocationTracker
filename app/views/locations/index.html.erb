@@ -2,8 +2,17 @@
 	<%= javascript_include_tag "geolocation.js" %>
 <% end %>	
 <%= csrf_meta_tag %>
+<%= stylesheet_link_tag "location"%>
 
-<table>
+<button id="find_my_location" name="find_my_location">
+	Find My Location
+</button>
+
+<h3 id="location_show">
+	</h3>
+
+
+<table id="location_table">
 	<thead>
 		<tr>
 			<th> Longitude </th>
@@ -21,7 +30,4 @@
 		<%- end %>
 	</tbody>
 </table>
-<button id="find_my_location" name="find_my_location">
-	Find My Location
-</button>
 

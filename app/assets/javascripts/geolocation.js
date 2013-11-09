@@ -6,6 +6,7 @@ $(document).ready(function() {
 		// VM isn't behaving nicely with the geolocation procedures
 		alert("Finding your location");
 		onSuccess(2);
+		//getLocation();
 	});
 	
 	$.ajaxSetup({
@@ -15,7 +16,7 @@ $(document).ready(function() {
 	});
 
 	var myPosition;
-	function get_location() {
+	function getLocation() {
 		if (navigator.geolocation) {
 			alert("Asking for geolocation");
 			navigator.geolocation.getCurrentPosition(
@@ -39,11 +40,13 @@ $(document).ready(function() {
 		// As a solution, this function is called directly with hardcoded
 		// values and the AJAX is working just fine 
 		myPosition = new Array();
-		//myPosition[0] = position.coords.latitude;
-		//myPosition[1] = position.coords.longitude;
-		myPosition[0] = 25.0;
-		myPosition[1] = 3439.934;
-		//param = 'latitude=' + myPosition[0] + '&longitude=' + myPosition[1];
+		if (position.coords) {
+			myPosition[0] = position.coords.latitude;
+			myPosition[1] = position.coords.longitude;
+		} else {
+			myPosition[0] = 25.0;
+			myPosition[1] = 3439.934;
+		}
 		param = {latitude: myPosition[0], longitude: myPosition[1]};
 		alert("Starting the ajax call");
 		$.ajax({
@@ -56,7 +59,8 @@ $(document).ready(function() {
 	}
 
 	function ajaxSuccess(data, status, jqXHR) {
-		$("#location_show").text("Latitude: " + myPosition[0].toString() + " Longitude: " + myPosition[1].toString());
+		$("#location_show").text("Your location is at " +
+			"Latitude: " + myPosition[0].toString() + " Longitude: " + myPosition[1].toString());
 	}
 
 	function onError(error) {
