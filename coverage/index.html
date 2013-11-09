@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Rottenpotatoes</title>
+    <title>Code coverage for Proj</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script src='./assets/0.4.5/jquery-1.4.2.min.js' type='text/javascript'></script>
-    <script src='./assets/0.4.5/jquery.dataTables.min.js' type='text/javascript'></script>   
-    <script src='./assets/0.4.5/fancybox/jquery.fancybox-1.3.1.pack.js' type='text/javascript'></script>   
-    <script src='./assets/0.4.5/jquery.timeago.js' type='text/javascript'></script>   
-    <script src='./assets/0.4.5/jquery.url.js' type='text/javascript'></script>   
-    <script src='./assets/0.4.5/app.js' type='text/javascript'></script>    
-    <link href='./assets/0.4.5/stylesheet.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link href='./assets/0.4.5/fancybox/jquery.fancybox-1.3.1.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link href='./assets/0.4.5/smoothness/jquery-ui-1.8.4.custom.css' media='screen, projection, print' rel='stylesheet' type='text/css'>    
-    <link rel="shortcut icon" type="image/png" href="./assets/0.4.5/favicon.png" />
-    <link rel="icon" type="image/png" href="./assets/0.4.5/favicon.png" />
+    <script src='./assets/0.5.3/jquery-1.6.2.min.js' type='text/javascript'></script>
+    <script src='./assets/0.5.3/jquery.dataTables.min.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.timeago.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.url.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/highlight.pack.js' type='text/javascript'></script>  
+    <script src='./assets/0.5.3/app.js' type='text/javascript'></script>    
+    <link href='./assets/0.5.3/stylesheet.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/highlight.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css' media='screen, projection, print' rel='stylesheet' type='text/css'>    
+    <link rel="shortcut icon" type="image/png" href="./assets/0.5.3/favicon_red.png" />
+    <link rel="icon" type="image/png" href="./assets/0.5.3/favicon.png" />
   </head>
   
   <body>
     <div id="loading">
-      <img src="./assets/0.4.5/loading.gif" alt="loading"/>
+      <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-26T13:06:01-07:00">2013-10-26T13:06:01-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-09T15:28:18-08:00">2013-11-09T15:28:18-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
-    All Files
-    (<span class="red">44.23%</span>)
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="red">71.01%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         1.25
+       </span>
+    </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>5</b> files in total.
-    <b>52</b> relevant lines. 
-    <span class="green"><b>23</b> lines covered</span> and
-    <span class="red"><b>29</b> lines missed </span>
+    <b>10</b> files in total.
+    <b>69</b> relevant lines. 
+    <span class="green"><b>49</b> lines covered</span> and
+    <span class="red"><b>20</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -46,53 +54,187 @@
         <th>Relevant Lines</th>
         <th>Lines covered</th>
         <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
       </tr>
     </thead>
     <tbody>
       
       <tr>
-        <td><a href="#c6bdee8f219a5aa93ce158cfb5bae435bb4668bc" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
-        <td class="green">100.0 %</td>
+        <td class="strong"><a href="#ab6c602e7bac4cf0f23dd59608ffaf29925a3e05" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
         <td>2</td>
         <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
-        <td><a href="#e15ae9a5079aee8e410e809f8b3f5752cae0c426" class="src_link" title="./app/controllers/movies_controller.rb">./app/controllers/movies_controller.rb</a></td>
-        <td class="red">37.21 %</td>
-        <td>73</td>
-        <td>43</td>
-        <td>16</td>
-        <td>27</td>
+        <td class="strong"><a href="#9c77dc58bbcf95830e6abf1fb76b1203078c9a7f" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
-        <td><a href="#8a946a89af4c0b528785d3bb25d832df6061c258" class="src_link" title="./app/helpers/application_helper.rb">./app/helpers/application_helper.rb</a></td>
-        <td class="green">100.0 %</td>
+        <td class="strong"><a href="#5802c27b4c86968ca51336b661e790f9ffdb1051" class="src_link" title="app/controllers/locations_controller.rb">app/controllers/locations_controller.rb</a></td>
+        <td class="red strong">28.0 %</td>
+        <td>41</td>
+        <td>25</td>
+        <td>7</td>
+        <td>18</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1cc23ac24334d7bfa016cadd4acfa96be4bbdc9d" class="src_link" title="app/controllers/members_controller.rb">app/controllers/members_controller.rb</a></td>
+        <td class="green strong">92.0 %</td>
+        <td>60</td>
+        <td>25</td>
+        <td>23</td>
+        <td>2</td>
+        <td>1.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8f5a972520bbd188a216c8309114be34465e3d61" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
         <td>1</td>
         <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
-        <td><a href="#6dea07ae45a80ec8a17925d7bdc3500de5b20f0b" class="src_link" title="./app/helpers/movies_helper.rb">./app/helpers/movies_helper.rb</a></td>
-        <td class="red">66.67 %</td>
+        <td class="strong"><a href="#3a42dd76a1a33ec1af59fcb5ff622ef569f2dfe4" class="src_link" title="app/helpers/home_helper.rb">app/helpers/home_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#56e01603625e5eb8f89af3e4c777edc061de215d" class="src_link" title="app/mailers/user_mailer.rb">app/mailers/user_mailer.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
         <td>6</td>
-        <td>3</td>
-        <td>2</td>
-        <td>1</td>
+        <td>6</td>
+        <td>0</td>
+        <td>3.5</td>
       </tr>
       
       <tr>
-        <td><a href="#9c548ad1498844553833d1e1157d1b768863ed37" class="src_link" title="./app/models/movie.rb">./app/models/movie.rb</a></td>
-        <td class="red">66.67 %</td>
-        <td>5</td>
+        <td class="strong"><a href="#f4b6afd3895ce44ae88d0e7603c20dda1b4bf660" class="src_link" title="app/models/location.rb">app/models/location.rb</a></td>
+        <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
-        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3943a7fca9954ff7029b061f60907b3a7dac3cf4" class="src_link" title="app/models/member.rb">app/models/member.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ca6f76a75cbb63c69aeaf97a6a68317975d4d982" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+          <div class="file_list_container" id="Controllers">
+  <h2>
+    <span class="group_name">Controllers</span>
+    (<span class="covered_percent"><span class="red">62.96%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="yellow">
+         1.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Controllers"></a>
+  <div>
+    <b>4</b> files in total.
+    <b>54</b> relevant lines. 
+    <span class="green"><b>34</b> lines covered</span> and
+    <span class="red"><b>20</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#ab6c602e7bac4cf0f23dd59608ffaf29925a3e05" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9c77dc58bbcf95830e6abf1fb76b1203078c9a7f" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5802c27b4c86968ca51336b661e790f9ffdb1051" class="src_link" title="app/controllers/locations_controller.rb">app/controllers/locations_controller.rb</a></td>
+        <td class="red strong">28.0 %</td>
+        <td>41</td>
+        <td>25</td>
+        <td>7</td>
+        <td>18</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1cc23ac24334d7bfa016cadd4acfa96be4bbdc9d" class="src_link" title="app/controllers/members_controller.rb">app/controllers/members_controller.rb</a></td>
+        <td class="green strong">92.0 %</td>
+        <td>60</td>
+        <td>25</td>
+        <td>23</td>
+        <td>2</td>
+        <td>1.7</td>
       </tr>
       
     </tbody>
@@ -100,17 +242,23 @@
 </div>
 
         
-          <div class="file_list_container" id="Controllers">
+          <div class="file_list_container" id="Models">
   <h2>
-    Controllers
-    (<span class="red">40.0%</span>)
+    <span class="group_name">Models</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="yellow">
+         1.0
+       </span>
+    </span> hits/line)
   </h2>
-  <a name="Controllers"></a>
+  <a name="Models"></a>
   <div>
-    <b>2</b> files in total.
-    <b>45</b> relevant lines. 
-    <span class="green"><b>18</b> lines covered</span> and
-    <span class="red"><b>27</b> lines missed </span>
+    <b>3</b> files in total.
+    <b>7</b> relevant lines. 
+    <span class="green"><b>7</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -121,43 +269,63 @@
         <th>Relevant Lines</th>
         <th>Lines covered</th>
         <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
       </tr>
     </thead>
     <tbody>
       
       <tr>
-        <td><a href="#c6bdee8f219a5aa93ce158cfb5bae435bb4668bc" class="src_link" title="./app/controllers/application_controller.rb">./app/controllers/application_controller.rb</a></td>
-        <td class="green">100.0 %</td>
+        <td class="strong"><a href="#f4b6afd3895ce44ae88d0e7603c20dda1b4bf660" class="src_link" title="app/models/location.rb">app/models/location.rb</a></td>
+        <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
         <td>2</td>
         <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
-        <td><a href="#e15ae9a5079aee8e410e809f8b3f5752cae0c426" class="src_link" title="./app/controllers/movies_controller.rb">./app/controllers/movies_controller.rb</a></td>
-        <td class="red">37.21 %</td>
-        <td>73</td>
-        <td>43</td>
-        <td>16</td>
-        <td>27</td>
+        <td class="strong"><a href="#3943a7fca9954ff7029b061f60907b3a7dac3cf4" class="src_link" title="app/models/member.rb">app/models/member.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ca6f76a75cbb63c69aeaf97a6a68317975d4d982" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
   </table>
 </div>
+
         
-          <div class="file_list_container" id="Models">
+          <div class="file_list_container" id="Mailers">
   <h2>
-    Models
-    (<span class="red">66.67%</span>)
+    <span class="group_name">Mailers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.5
+       </span>
+    </span> hits/line)
   </h2>
-  <a name="Models"></a>
+  <a name="Mailers"></a>
   <div>
     <b>1</b> files in total.
-    <b>3</b> relevant lines. 
-    <span class="green"><b>2</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>6</b> relevant lines. 
+    <span class="green"><b>6</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -168,34 +336,43 @@
         <th>Relevant Lines</th>
         <th>Lines covered</th>
         <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
       </tr>
     </thead>
     <tbody>
       
       <tr>
-        <td><a href="#9c548ad1498844553833d1e1157d1b768863ed37" class="src_link" title="./app/models/movie.rb">./app/models/movie.rb</a></td>
-        <td class="red">66.67 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>2</td>
-        <td>1</td>
+        <td class="strong"><a href="#56e01603625e5eb8f89af3e4c777edc061de215d" class="src_link" title="app/mailers/user_mailer.rb">app/mailers/user_mailer.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>3.5</td>
       </tr>
       
     </tbody>
   </table>
 </div>
+
         
           <div class="file_list_container" id="Helpers">
   <h2>
-    Helpers
-    (<span class="red">75.0%</span>)
+    <span class="group_name">Helpers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="yellow">
+         1.0
+       </span>
+    </span> hits/line)
   </h2>
   <a name="Helpers"></a>
   <div>
     <b>2</b> files in total.
-    <b>4</b> relevant lines. 
-    <span class="green"><b>3</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>2</b> relevant lines. 
+    <span class="green"><b>2</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -206,36 +383,46 @@
         <th>Relevant Lines</th>
         <th>Lines covered</th>
         <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
       </tr>
     </thead>
     <tbody>
       
       <tr>
-        <td><a href="#8a946a89af4c0b528785d3bb25d832df6061c258" class="src_link" title="./app/helpers/application_helper.rb">./app/helpers/application_helper.rb</a></td>
-        <td class="green">100.0 %</td>
+        <td class="strong"><a href="#8f5a972520bbd188a216c8309114be34465e3d61" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
         <td>1</td>
         <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
-        <td><a href="#6dea07ae45a80ec8a17925d7bdc3500de5b20f0b" class="src_link" title="./app/helpers/movies_helper.rb">./app/helpers/movies_helper.rb</a></td>
-        <td class="red">66.67 %</td>
-        <td>6</td>
-        <td>3</td>
+        <td class="strong"><a href="#3a42dd76a1a33ec1af59fcb5ff622ef569f2dfe4" class="src_link" title="app/helpers/home_helper.rb">app/helpers/home_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
   </table>
 </div>
+
         
           <div class="file_list_container" id="Libraries">
   <h2>
-    Libraries
-    (<span class="green">100.0%</span>)
+    <span class="group_name">Libraries</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
   </h2>
   <a name="Libraries"></a>
   <div>
@@ -253,6 +440,7 @@
         <th>Relevant Lines</th>
         <th>Lines covered</th>
         <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
       </tr>
     </thead>
     <tbody>
@@ -260,11 +448,18 @@
     </tbody>
   </table>
 </div>
+
         
           <div class="file_list_container" id="Plugins">
   <h2>
-    Plugins
-    (<span class="green">100.0%</span>)
+    <span class="group_name">Plugins</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
   </h2>
   <a name="Plugins"></a>
   <div>
@@ -282,6 +477,7 @@
         <th>Relevant Lines</th>
         <th>Lines covered</th>
         <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
       </tr>
     </thead>
     <tbody>
@@ -289,1277 +485,1024 @@
     </tbody>
   </table>
 </div>
+
         
       </div>
     
       <div id="footer">
-        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.4.2 
-        and simplecov-html v0.4.5<br/>
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.6.4 
+        and simplecov-html v0.5.3<br/>
         using Cucumber Features
       </div>
     
       <div class="source_files">
       
-        <div class="source_table" id="c6bdee8f219a5aa93ce158cfb5bae435bb4668bc">
-  <table>
-    <thead>
-    <tr>
-      <td colspan="3">
-        <h3>./app/controllers/application_controller.rb</h3>
-        <h4><span class="green">100.0 %</span> covered</h4>
-      </td>
-    </tr>
-    <tr>
-      <th>#</th>
-      <th></th>
-      <th>Hits</th>
-    </tr>
-    </thead>
-    <tbody>
+        <div class="source_table" id="ab6c602e7bac4cf0f23dd59608ffaf29925a3e05">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>1</pre>
-      </td>
-      <td>
-        <pre>class ApplicationController &lt; ActionController::Base</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>2</pre>
-      </td>
-      <td>
-        <pre>  protect_from_forgery</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>3</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    </tbody>
-  </table>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
 </div>
       
-        <div class="source_table" id="e15ae9a5079aee8e410e809f8b3f5752cae0c426">
-  <table>
-    <thead>
-    <tr>
-      <td colspan="3">
-        <h3>./app/controllers/movies_controller.rb</h3>
-        <h4><span class="red">37.21 %</span> covered</h4>
-      </td>
-    </tr>
-    <tr>
-      <th>#</th>
-      <th></th>
-      <th>Hits</th>
-    </tr>
-    </thead>
-    <tbody>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>1</pre>
-      </td>
-      <td>
-        <pre>class MoviesController &lt; ApplicationController</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>2</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>3</pre>
-      </td>
-      <td>
-        <pre>  def similar</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>4</pre>
-      </td>
-      <td>
-        <pre>    currMovie = Movie.find params[:id]</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>5</pre>
-      </td>
-      <td>
-        <pre>    @movies = Movie.find(:all, :conditions =&gt; {:director =&gt; currMovie.director})</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>6</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>7</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>8</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>9</pre>
-      </td>
-      <td>
-        <pre>  def show</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="3">
-      <td class="line_number">
-        <pre>10</pre>
-      </td>
-      <td>
-        <pre>    id = params[:id] # retrieve movie ID from URI route</pre>
-      </td>
-      <td class="hits">
-        3
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="3">
-      <td class="line_number">
-        <pre>11</pre>
-      </td>
-      <td>
-        <pre>    @movie = Movie.find(id) # look up movie by unique ID</pre>
-      </td>
-      <td class="hits">
-        3
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>12</pre>
-      </td>
-      <td>
-        <pre>    # will render app/views/movies/show.&lt;extension&gt; by default</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>13</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>14</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>15</pre>
-      </td>
-      <td>
-        <pre>  def index</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>16</pre>
-      </td>
-      <td>
-        <pre>    sort = params[:sort] || session[:sort]</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>17</pre>
-      </td>
-      <td>
-        <pre>    case sort</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>18</pre>
-      </td>
-      <td>
-        <pre>    when 'title'</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>19</pre>
-      </td>
-      <td>
-        <pre>      ordering,@title_header = {:order =&gt; :title}, 'hilite'</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>20</pre>
-      </td>
-      <td>
-        <pre>    when 'release_date'</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>21</pre>
-      </td>
-      <td>
-        <pre>      ordering,@date_header = {:order =&gt; :release_date}, 'hilite'</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>22</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>23</pre>
-      </td>
-      <td>
-        <pre>    @all_ratings = Movie.all_ratings</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>24</pre>
-      </td>
-      <td>
-        <pre>    @selected_ratings = params[:ratings] || session[:ratings] || {}</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>25</pre>
-      </td>
-      <td>
-        <pre>    </pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>26</pre>
-      </td>
-      <td>
-        <pre>    if @selected_ratings == {}</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>27</pre>
-      </td>
-      <td>
-        <pre>      @selected_ratings = Hash[@all_ratings.map {|rating| [rating, rating]}]</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>28</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>29</pre>
-      </td>
-      <td>
-        <pre>    </pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>30</pre>
-      </td>
-      <td>
-        <pre>    if params[:sort] != session[:sort]</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>31</pre>
-      </td>
-      <td>
-        <pre>      session[:sort] = sort</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>32</pre>
-      </td>
-      <td>
-        <pre>      flash.keep</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>33</pre>
-      </td>
-      <td>
-        <pre>      redirect_to :sort =&gt; sort, :ratings =&gt; @selected_ratings and return</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>34</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>35</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>36</pre>
-      </td>
-      <td>
-        <pre>    if params[:ratings] != session[:ratings] and @selected_ratings != {}</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>37</pre>
-      </td>
-      <td>
-        <pre>      session[:sort] = sort</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>38</pre>
-      </td>
-      <td>
-        <pre>      session[:ratings] = @selected_ratings</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>39</pre>
-      </td>
-      <td>
-        <pre>      flash.keep</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>40</pre>
-      </td>
-      <td>
-        <pre>      redirect_to :sort =&gt; sort, :ratings =&gt; @selected_ratings and return</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>41</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>42</pre>
-      </td>
-      <td>
-        <pre>    @movies = Movie.find_all_by_rating(@selected_ratings.keys, ordering)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>43</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>44</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>45</pre>
-      </td>
-      <td>
-        <pre>  def new</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>46</pre>
-      </td>
-      <td>
-        <pre>    # default: render 'new' template</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>47</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>48</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>49</pre>
-      </td>
-      <td>
-        <pre>  def create</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>50</pre>
-      </td>
-      <td>
-        <pre>    @movie = Movie.create!(params[:movie])</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>51</pre>
-      </td>
-      <td>
-        <pre>    flash[:notice] = &quot;#{@movie.title} was successfully created.&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>52</pre>
-      </td>
-      <td>
-        <pre>    redirect_to movies_path</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>53</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>54</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>55</pre>
-      </td>
-      <td>
-        <pre>  def edit</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>56</pre>
-      </td>
-      <td>
-        <pre>    @movie = Movie.find params[:id]</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>57</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>58</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>59</pre>
-      </td>
-      <td>
-        <pre>  def update</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>60</pre>
-      </td>
-      <td>
-        <pre>    @movie = Movie.find params[:id]</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>61</pre>
-      </td>
-      <td>
-        <pre>    @movie.update_attributes!(params[:movie])</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>62</pre>
-      </td>
-      <td>
-        <pre>    flash[:notice] = &quot;#{@movie.title} was successfully updated.&quot;</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>63</pre>
-      </td>
-      <td>
-        <pre>    redirect_to movie_path(@movie)</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>64</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>65</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>66</pre>
-      </td>
-      <td>
-        <pre>  def destroy</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>67</pre>
-      </td>
-      <td>
-        <pre>    @movie = Movie.find(params[:id])</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>68</pre>
-      </td>
-      <td>
-        <pre>    @movie.destroy</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>69</pre>
-      </td>
-      <td>
-        <pre>    flash[:notice] = &quot;Movie '#{@movie.title}' deleted.&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>70</pre>
-      </td>
-      <td>
-        <pre>    redirect_to movies_path</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>71</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>72</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>73</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    </tbody>
-  </table>
+        <div class="source_table" id="9c77dc58bbcf95830e6abf1fb76b1203078c9a7f">
+  <div class="header">
+    <h3>app/controllers/home_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class HomeController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
 </div>
       
-        <div class="source_table" id="8a946a89af4c0b528785d3bb25d832df6061c258">
-  <table>
-    <thead>
-    <tr>
-      <td colspan="3">
-        <h3>./app/helpers/application_helper.rb</h3>
-        <h4><span class="green">100.0 %</span> covered</h4>
-      </td>
-    </tr>
-    <tr>
-      <th>#</th>
-      <th></th>
-      <th>Hits</th>
-    </tr>
-    </thead>
-    <tbody>
+        <div class="source_table" id="5802c27b4c86968ca51336b661e790f9ffdb1051">
+  <div class="header">
+    <h3>app/controllers/locations_controller.rb</h3>
+    <h4><span class="red">28.0 %</span> covered</h4>
+    <div>
+      <b>25</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>18</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>1</pre>
-      </td>
-      <td>
-        <pre>module ApplicationHelper</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>2</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    </tbody>
-  </table>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class LocationsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">		id = params[:id]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">		@location = Location.find(id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">		#TODO create a map that shows the corresponding stuff</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">		@locations = Location.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">		#TODO</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">		@location = Location.new</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">		@location.longitude = params[:longitude]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">		@location.latitude = params[:latitude]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">	    if @location.save!</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">	    	flash[:notice] = &quot;Location successfully saved&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">	    	redirect_to locations_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">	    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def update</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">		@location = Location.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">		@location.longitude = params[:longitude]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">		@location.latitude = params[:latitude]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
+          
+          <code class="ruby">		flash[:notice] = &quot;Location successfully updated&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">		redirect_to locations_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">		@location = Location.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">		@location.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">		flash[:notice] = &quot;Location data deleted&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">		redirect_to locations_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
 </div>
       
-        <div class="source_table" id="6dea07ae45a80ec8a17925d7bdc3500de5b20f0b">
-  <table>
-    <thead>
-    <tr>
-      <td colspan="3">
-        <h3>./app/helpers/movies_helper.rb</h3>
-        <h4><span class="red">66.67 %</span> covered</h4>
-      </td>
-    </tr>
-    <tr>
-      <th>#</th>
-      <th></th>
-      <th>Hits</th>
-    </tr>
-    </thead>
-    <tbody>
+        <div class="source_table" id="1cc23ac24334d7bfa016cadd4acfa96be4bbdc9d">
+  <div class="header">
+    <h3>app/controllers/members_controller.rb</h3>
+    <h4><span class="green">92.0 %</span> covered</h4>
+    <div>
+      <b>25</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>1</pre>
-      </td>
-      <td>
-        <pre>module MoviesHelper</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>2</pre>
-      </td>
-      <td>
-        <pre>  # Checks if a number is odd:</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>3</pre>
-      </td>
-      <td>
-        <pre>  def oddness(count)</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>4</pre>
-      </td>
-      <td>
-        <pre>    count.odd? ?  &quot;odd&quot; :  &quot;even&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>5</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>6</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    </tbody>
-  </table>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class MembersController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @members = User.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    @members = User.create!(params[:member])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    redirect_to members_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">	#def email</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">		#@members = Member.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">		#if @members.length == 2</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">			#flash[:notice] =  &quot;No members available.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">			#render &quot;/index&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">		#else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">			#@members.each do |member|</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">				#UserMailer.seek_email(member).deliver</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">			#end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">			#redirect_to &quot;/success&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">		#end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">	#end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def email		</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="32">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    if params[:members_all]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @members = User.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @members_temp = (params[:members]? params[:members].keys : [])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="36">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		  @members = User.find(:all, :conditions =&gt; {:name =&gt; @members_temp})</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="39">
+          <span class="hits">3</span>
+          
+          <code class="ruby">		puts @members.length</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="40">
+          <span class="hits">3</span>
+          
+          <code class="ruby">		if @members.length == 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			flash[:notice] = &quot;No members available&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			redirect_to &quot;/members&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">		else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
+          
+          <code class="ruby">			@members.each do |member|</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="45">
+          <span class="hits">6</span>
+          
+          <code class="ruby">				UserMailer.seek_email(member).deliver</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">			end</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
+          
+          <code class="ruby">			redirect_to success_members_path(:members =&gt; params[:members], :members_all =&gt; params[:members_all])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">		end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def success</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if params[:members_all]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @members = User.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @members_temp = (params[:members]? params[:members].keys : [])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		  @members = User.find(:all, :conditions =&gt; {:name =&gt; @members_temp})</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
 </div>
       
-        <div class="source_table" id="9c548ad1498844553833d1e1157d1b768863ed37">
-  <table>
-    <thead>
-    <tr>
-      <td colspan="3">
-        <h3>./app/models/movie.rb</h3>
-        <h4><span class="red">66.67 %</span> covered</h4>
-      </td>
-    </tr>
-    <tr>
-      <th>#</th>
-      <th></th>
-      <th>Hits</th>
-    </tr>
-    </thead>
-    <tbody>
+        <div class="source_table" id="8f5a972520bbd188a216c8309114be34465e3d61">
+  <div class="header">
+    <h3>app/helpers/application_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>1</pre>
-      </td>
-      <td>
-        <pre>class Movie &lt; ActiveRecord::Base</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module ApplicationHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3a42dd76a1a33ec1af59fcb5ff622ef569f2dfe4">
+  <div class="header">
+    <h3>app/helpers/home_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>2</pre>
-      </td>
-      <td>
-        <pre>  def self.all_ratings</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module HomeHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="56e01603625e5eb8f89af3e4c777edc061de215d">
+  <div class="header">
+    <h3>app/mailers/user_mailer.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>3</pre>
-      </td>
-      <td>
-        <pre>    %w(G PG PG-13 NC-17 R)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class UserMailer &lt; ActionMailer::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  default from: &quot;donthackmeplz6@gmail.com&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def seek_email(member)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
+          
+          <code class="ruby">			@user = member</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="6">
+          <span class="hits">6</span>
+          
+          <code class="ruby">			@url = 'http://facebook.com'</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="7">
+          <span class="hits">6</span>
+          
+          <code class="ruby">			mail(to:@user.email, subject:&quot;[BAMRU Location Tracker] Where Are You?&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="f4b6afd3895ce44ae88d0e7603c20dda1b4bf660">
+  <div class="header">
+    <h3>app/models/location.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>4</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Location &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	attr_accessible :time, :latitude, :longitude, :id</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3943a7fca9954ff7029b061f60907b3a7dac3cf4">
+  <div class="header">
+    <h3>app/models/member.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>5</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Member &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessible :name, :email, :role</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="ca6f76a75cbb63c69aeaf97a6a68317975d4d982">
+  <div class="header">
+    <h3>app/models/user.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
   
-    </tbody>
-  </table>
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class User &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Include default devise modules. Others available are:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # :confirmable, :lockable, :timeoutable and :omniauthable</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  devise :database_authenticatable, :registerable,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">         :recoverable, :rememberable, :trackable, :validatable</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # Setup accessible (or protected) attributes for your model</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessible :name, :email, :password, :password_confirmation, :role, :remember_me</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # attr_accessible :title, :body</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
 </div>
       
       </div>
