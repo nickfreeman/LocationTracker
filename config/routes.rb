@@ -1,6 +1,6 @@
 LocationTracker::Application.routes.draw do
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'home#show'
   end
   root :to => "home#index"
   devise_for :users
