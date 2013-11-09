@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20131028060027) do
 
-  create_table "members", :force => true do |t|
-    t.string "name"
-    t.string "email"
-    t.string "role"
-  end
-
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
