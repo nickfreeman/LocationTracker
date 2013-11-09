@@ -1,23 +1,15 @@
-Given /the following member info exist/ do |member_table|
-  member_table.hashes.each do |member|
-    Member.create!(member)
+Given /the following users info exist/ do |users_table|
+  users_table.hashes.each do |user|
+    User.create!(user)
   end
 end
 
-Given /I am a logged in member/ do
-	#login feature not implemented yet
-end
 
-Then /I should see Successfully Sent/ do
-     step %{I should see "Successfully Sent"}
-end
 
-Given /empty database/ do 
-  Member.destroy_all
-end
 
-Then /I should see No members available/ do
-    if Email.count == 0
-      step %{I should see "No members available"}
-    end
-end
+Then /I should see all members/ do 
+  @users = User.all
+  @users.each do |user|
+    page.has_content?(user.name)
+  end
+end 
