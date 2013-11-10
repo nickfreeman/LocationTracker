@@ -1,37 +1,26 @@
-<html>
-<head>
-</head>
-<body>
+<% content_for :javascript_includes do %>
+	<%= javascript_include_tag "geolocation.js" %>
+<% end %>	
+<%= csrf_meta_tag %>
 
-	<table>
-		<thead>
-			<tr>
-				<th> Longitude </th>
-				<th> Latitude </th>
-				<th> Time </th>
-				<th> User </th>
-			</tr>
-		</thead>
-		<tbody>
-			<%- @locations.each do |location| %>
-			<tr>
-				<td> <%= location.longitude %> </td>
-				<td> <%= location.latitude %> </td>
-				<td> <%= location.time %> </td>
-				<td> <%= location.member %> </td>
-			</tr>
-			<%- end %>
-		</tbody>
-	</table>
 
-	
-<%= link_to "Get Location",
-	{:controller => "locations", :action => "create"},
-	:remote => true %>
-	
-<script>
-  get_location();
-</script>
-
-</body>
-</html>
+<table>
+	<thead>
+		<tr>
+			<th> Longitude </th>
+			<th> Latitude </th>
+			<th> Time </th>
+		</tr>
+	</thead>
+	<tbody>
+		<%- @locations.each do |location| %>
+		<tr>
+			<td> <%= location.longitude %> </td>
+			<td> <%= location.latitude %> </td>
+			<td> <%= location.updated_at %> </td>
+		</tr>
+		<%- end %>
+	</tbody>
+</table>
+<button id="find_my_location" name="find_my_location">
+</button>
