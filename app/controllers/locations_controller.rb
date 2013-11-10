@@ -18,6 +18,9 @@ class LocationsController < ApplicationController
 		@location = Location.new
 		@location.longitude = params[:longitude]
 		@location.latitude = params[:latitude]
+		if params[:id]
+			@location.id = params[:id]
+		end
 	    if @location.save!
 	    	flash[:notice] = "Location successfully saved"
 	    	redirect_to locations_path
@@ -28,8 +31,10 @@ class LocationsController < ApplicationController
 		@location = Location.find(params[:id])
 		@location.longitude = params[:longitude]
 		@location.latitude = params[:latitude]
-		flash[:notice] = "Location successfully updated"
-		redirect_to locations_path
+		if @location.save!
+			flash[:notice] = "Location successfully updated"
+			redirect_to locations_path
+		end
 	end
 
 	def destroy

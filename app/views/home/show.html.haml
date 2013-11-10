@@ -15,7 +15,17 @@
                   <script src="../../assets/js/respond.min.js"></script>
   %body
     = render 'home/topbar'
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3AGyItogf6M4YJzUNnJHDeTjwFoMVHT4&sensor=true"></script>
+<script src="/assets/javascripts/map.js"></script>
+<body>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+  <style type="text/css">
+    html{ height: 100% }
+    body { height: 100%; margin: 0; padding: 0 }
+    #map-canvas { height: 50%}
+  </style>
+  <div id="map-canvas"/>
+</body>
 
 
 

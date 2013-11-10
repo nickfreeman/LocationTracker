@@ -4,28 +4,27 @@
 <%= csrf_meta_tag %>
 <%= stylesheet_link_tag "location"%>
 
-<button id="find_my_location" name="find_my_location">
+<button name="find_my_location" id="find_my_location">
 	Find My Location
 </button>
 
-<h3 id="location_show">
-	</h3>
+<h3 id="location_show"></h3>
 
 
 <table id="location_table">
 	<thead>
 		<tr>
-			<th> Longitude </th>
-			<th> Latitude </th>
-			<th> Time </th>
+			<th class="location_row"> Longitude </th>
+			<th class="location_row"> Latitude </th>
+			<th class="location_row"> Time </th>
 		</tr>
 	</thead>
 	<tbody>
 		<%- @locations.each do |location| %>
 		<tr>
-			<td> <%= location.longitude %> </td>
-			<td> <%= location.latitude %> </td>
-			<td> <%= location.updated_at %> </td>
+			<td class="location_row"> <%= location.longitude %> </td>
+			<td class="location_row"> <%= location.latitude %> </td>
+			<td class="location_row"> <%= location.updated_at %> </td>
 		</tr>
 		<%- end %>
 	</tbody>
