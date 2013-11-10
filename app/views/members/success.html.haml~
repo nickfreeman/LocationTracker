@@ -6,7 +6,6 @@
   %tr
    %th Name
    %th Email
-   %th Role
  %tbody
   - @members.each do |member|
    %tr

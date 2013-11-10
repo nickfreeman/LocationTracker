@@ -29,7 +29,10 @@ class MembersController < ApplicationController
 	#end
 
 	def email		
-		@members = User.all
+    @members_temp = params[:members]? params[:members].keys : []
+		@members = User.find(:all, :conditions => {:name => @members_temp})
+   	#@movies = Movie.find(:all, :conditions => {:rating => (@curr_ratings==[]? @all_ratings : @curr_ratings)})
+		puts @members
 		puts @members.length
 		if @members.length == 0
 			flash[:notice] = "No members available"
@@ -38,12 +41,13 @@ class MembersController < ApplicationController
 			@members.each do |member|
 				UserMailer.seek_email(member).deliver
 			end
-			redirect_to "/members/success"
+			redirect_to success_members_path(:members => params[:members])
 		end
 	end
 	
 	def success
-		@members = User.all
+		@members_temp = params[:members]? params[:members].keys : []
+		@members = User.find(:all, :conditions => {:name => @members_temp})
 	end
 
 end

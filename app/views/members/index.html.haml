@@ -18,6 +18,9 @@
 				%td= member.name
 				%td= member.email
 				%td= member.role
-
-= form_tag "members/email", :method => :get, :id => 'send_form' do 
+= form_tag "members/email", :method => :get, :id => 'send_form' do
+	Members: 
+	- @members.each do |member|
+		= member.name
+		= check_box_tag "members[#{member.name}]"
 	= submit_tag 'Send Request', :id => 'request_sent'
