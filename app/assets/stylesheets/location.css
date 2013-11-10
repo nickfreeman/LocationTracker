@@ -2,16 +2,13 @@
 	width: 600px;	
 }
 
-td {
+.location_row {
 	width: 200px;
 }
 
-th {
-	width: 200px;
-}
 
-button {
-	height: 300px;
+#find_my_location {
+	height: 120px;
 	width: 300px;
 	background-color: #4444cc;
 	border-radius: 20px;

@@ -11,15 +11,8 @@ Background:
  And I am on the find my location page
 
 
-Scenario: Track my location
- 
- When I press "find_my_location"
- Then I should be asked the share my location
+	 Scenario: Look up a location
 
-
-
- Scenario: Look up a location
-
- Given my location is in the database
- And I am on the "locations" page 
- Then I should see my location
+		 Given my location is in the database
+		 And I am on the find my location page
+		 Then I should see my location

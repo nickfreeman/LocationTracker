@@ -4,9 +4,8 @@ $(document).ready(function() {
 	$("#find_my_location").click(function() {
 		// Calling the success function directly for right now because the
 		// VM isn't behaving nicely with the geolocation procedures
-		alert("Finding your location");
-		onSuccess(2);
-		//getLocation();
+		//onSuccess(2);
+		getLocation();
 	});
 	
 	$.ajaxSetup({
@@ -18,7 +17,6 @@ $(document).ready(function() {
 	var myPosition;
 	function getLocation() {
 		if (navigator.geolocation) {
-			alert("Asking for geolocation");
 			navigator.geolocation.getCurrentPosition(
 				onSuccess,
 				onError, 
@@ -44,8 +42,7 @@ $(document).ready(function() {
 			myPosition[0] = position.coords.latitude;
 			myPosition[1] = position.coords.longitude;
 		} else {
-			myPosition[0] = 25.0;
-			myPosition[1] = 3439.934;
+			alert("Your position was not recorded correctly");
 		}
 		param = {latitude: myPosition[0], longitude: myPosition[1]};
 		alert("Starting the ajax call");
