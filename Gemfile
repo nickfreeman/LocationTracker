@@ -17,6 +17,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'actionmailer'
+  gem 'simplecov'
 end
 
 group :test do
