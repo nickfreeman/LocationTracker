@@ -1,0 +1,12 @@
+!!! XML
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:name => "viewport", :content => "initial-scale=1.0, user-scalable=no"}
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3AGyItogf6M4YJzUNnJHDeTjwFoMVHT4&sensor=true"></script>
+        %javascript_include_tag 'map'
+  %body
+    %div {:id => "map-canvas"}
+
+
