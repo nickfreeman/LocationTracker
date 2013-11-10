@@ -8,8 +8,8 @@ Background: field member's information has been added to database
 
  Given the following users info exist:
  |name            |email                     |role   | password | password_confirmation |
- | Shaumik Mondal | shaumik@berkeley.edu     | field | password | password 		|
- | Yina Jin       | yinajin@berkeley.edu     | field | password | password 		|
+ | Shaumik Mondal | themaster_759@hotmail.com| field | password | password 		|
+ | Yina Jin       | solaris.jin@gmail.com    | field | password | password 		|
  | Nick Freeman   | nickfreeman@berkeley.edu | AHC   | password | password 		|
  | Yeung John Li  | liyeungjohn@yahoo.ca     | field | password | password 		|
  | James	  | james@berkeley.edu 	     | AHC   | password | password 		|

@@ -12,7 +12,7 @@ Background: members have been added to database
 
 Scenario: Login with a correct username/password
 	When I fill in "Username" with "Shaumik"
-	And I fill in "Username" with "Shaumik"
+	When I enter password into "Password"
 	When I press "Login"
 	Then I should be logged in
 

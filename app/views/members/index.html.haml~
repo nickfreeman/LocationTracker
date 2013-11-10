@@ -3,28 +3,28 @@
 -if not flash.empty?
 	= flash[:notice]
 
-%h1 Member to Member Query
+-if user_signed_in? | not user_signed_in?
+	%h1 Member to Member Query
 
-%table#members
-	%thead
-		%tr
-			%th Name
-			%th Email
-			%th Role
-			%th Select
-	%tbody
-
-	= form_tag "members/email", :method => :get, :id => 'send_form' do
-		%tr
-			%td= \ 
-			%td Select to send to all members
-			%td= \
-			%td= check_box_tag "members_all"
-		- @members.each do |member|
+	%table#members
+		%thead
 			%tr
-				%td= member.name
-				%td= member.email
-				%td= member.role
-				%td= check_box_tag "members[#{member.name}]"
-		= submit_tag 'Send Request', :id => 'request_sent'
+				%th Name
+				%th Email
+				%th Role
+				%th Select
+		%tbody
+		= form_tag "members/email", :method => :get, :id => 'send_form' do
+			%tr
+				%td= \ 
+				%td Select to send to all members
+				%td= \
+				%td= check_box_tag "members_all"
+			- @members.each do |member|
+				%tr
+					%td= member.name
+					%td= member.email
+					%td= member.role
+					%td= check_box_tag "members[#{member.name}]"
+			= submit_tag 'Send Request', :id => 'request_sent'
 

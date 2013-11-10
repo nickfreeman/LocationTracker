@@ -30,6 +30,9 @@
         1,
         1,
         null,
+        null,
+        1,
+        null,
         null
       ],
       "/home/saasbook/169/proj/app/controllers/locations_controller.rb": [
@@ -160,6 +163,6 @@
         null
       ]
     },
-    "timestamp": 1384039698
+    "timestamp": 1384044339
   }
 }
