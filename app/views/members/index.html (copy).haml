@@ -13,18 +13,15 @@
 			%th Role
 			%th Select
 	%tbody
-
-	= form_tag "members/email", :method => :get, :id => 'send_form' do
-		%tr
-			%td= \ 
-			%td Select to send to all members
-			%td= \
-			%td= check_box_tag "members_all"
 		- @members.each do |member|
 			%tr
 				%td= member.name
 				%td= member.email
 				%td= member.role
 				%td= check_box_tag "members[#{member.name}]"
-		= submit_tag 'Send Request', :id => 'request_sent'
-
+= form_tag "members/email", :method => :get, :id => 'send_form' do
+	Members: 
+	- @members.each do |member|
+		= member.name
+		= check_box_tag "members[#{member.name}]"
+	= submit_tag 'Send Request', :id => 'request_sent'
