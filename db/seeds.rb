@@ -14,7 +14,7 @@ User.create!({:name => 'James Kim', :email => 'james@email.com', :password => 'k
 
 
 
-Location.create!({:latitude => 22.572646, :longitude => 88.363895})
-Location.create!({:latitude => 27.469287, :longitude => 85.517578})
-Location.create!({:latitude => 28.401065, :longitude => 89.494629})
+Location.create!({:latitude => -34.397, :longitude => 150.644})
+Location.create!({:latitude => -34.200, :longitude => 150.600})
+Location.create!({:latitude => -34.100, :longitude => 150.500})
 
