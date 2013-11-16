@@ -3,10 +3,14 @@ class HomeController < ApplicationController
   end
 
   def show
-    geolocations = Location.all
-    @locations = []
-    geolocations.each{ |locate| @locations.push([locate.latitude,locate.longitude])}
-    puts "---------------******************_----------------------**************--------------------"
-    puts @locations
+	if Location.count != 0
+		geolocations = Location.all
+		@locations = []
+		geolocations.each{ |locate| @locations.push([locate.latitude,locate.longitude])}
+	else
+		@locations = [[37.488902,-122.230657]]
+	end
+    #puts "---------------******************_----------------------**************--------------------"
+    #puts @locations
   end
 end

@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/saasbook/169/proj/app/models/user.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/models/user.rb": [
         1,
         null,
         null,
@@ -10,67 +10,30 @@
         null,
         null,
         1,
+        null,
         null,
         null
       ],
-      "/home/saasbook/169/proj/app/controllers/application_controller.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/saasbook/169/proj/app/helpers/application_helper.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/169/proj/app/helpers/home_helper.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/169/proj/app/controllers/home_controller.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/home_controller.rb": [
         1,
         1,
         null,
         null,
         1,
-        null,
-        null
-      ],
-      "/home/saasbook/169/proj/app/controllers/locations_controller.rb": [
-        1,
-        null,
-        1,
         0,
-        0,
-        null,
-        null,
-        1,
-        null,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
         0,
         0,
         0,
@@ -78,12 +41,61 @@
         null,
         null
       ],
-      "/home/saasbook/169/proj/app/models/location.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/locations_controller.rb": [
         1,
+        null,
         1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        3,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
         null
       ],
-      "/home/saasbook/169/proj/app/controllers/members_controller.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/models/location.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/members_controller.rb": [
         1,
         null,
         1,
@@ -128,41 +140,41 @@
         1,
         null,
         2,
-        6,
-        null,
         2,
         null,
+        0,
         null,
         null,
-        1,
-        2,
-        1,
         null,
         1,
-        1,
+        0,
+        0,
+        null,
+        0,
+        0,
         null,
         null,
         null,
         null
       ],
-      "/home/saasbook/169/proj/app/models/member.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/models/member.rb": [
         1,
         1,
         null
       ],
-      "/home/saasbook/169/proj/app/mailers/user_mailer.rb": [
+      "/home/shaumik/LocationTracker/LocationTracker/app/mailers/user_mailer.rb": [
         1,
         1,
         null,
         1,
-        6,
-        6,
-        6,
+        2,
+        2,
+        2,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1384044339
+    "timestamp": 1384631758
   }
 }
