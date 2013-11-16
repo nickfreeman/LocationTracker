@@ -34,7 +34,9 @@
               %li
                 = link_to "Sign out", destroy_user_session_path, :method => :delete 
               %li
-                %a{:href => "/members"} EMAIL EVERY ONE!!!!!          
+                %a{:href => "/members"} Send Location Request
+              %li
+                %a{:href => "/locations"} Log Location
           - if not user_signed_in?
             %ul.nav.navbar-nav.navbar-right
               %li= link_to "Sign up", new_user_registration_path
