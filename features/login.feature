@@ -11,14 +11,13 @@ Background: members have been added to database
 	And I am on the home page
 
 Scenario: Login with a correct username/password
-	When I fill in "Username" with "Shaumik"
-	And I fill in "Username" with "Shaumik"
-	When I press "Login"
+	When I fill in "Email" with "shaumik@berkeley.edu"
+	And I fill in "Password" with "password"
+	And I press "Sign in"
 	Then I should be logged in
 
 Scenario: Login with incorrect username/password
-	When I enter yinajing@berkeley.edu into "Username"
-	When I enter password into "Password"
-	When I press "Login"
+	When I fill in "Email" with "yinajin@berkeley.edu"
+	And I fill in "Password" with "password"
+	And I press "Sign in"
 	Then I should see "Username/Email and password do not match"
-	And I should not be logged in
