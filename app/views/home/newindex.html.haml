@@ -1,0 +1,70 @@
+!!!
+%html
+  %head
+    %title BAMRU Location Tracker
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Bootstrap
+    %link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
+      %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}/
+      %link{:href => "http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600", :rel => "stylesheet"}/
+      :css
+        /* http://css-tricks.com/perfect-full-page-background-image/ */
+        html {
+        	background: url("http://farm4.staticflickr.com/3678/9071700493_2044321565_h.jpg") no-repeat center center fixed; 
+        	-webkit-background-size: cover;
+        	-moz-background-size: cover;
+        	-o-background-size: cover;
+        	background-size: cover;
+        }
+
+        body {
+        	padding-top: 20px;
+        	font-size: 16px;
+        	font-family: "Open Sans",serif;
+        	background: transparent;
+        }
+
+        h1 {
+        	font-family: "Abel", Arial, sans-serif;
+        	font-weight: 400;
+        	font-size: 40px;
+        }
+
+        /* Override B3 .panel adding a subtly transparent background */
+        .panel {
+        	background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .margin-base-vertical {
+        	margin: 40px 0;
+        }
+
+	  %body
+    .container
+      .row
+        .col-md-6.col-md-offset-3.panel.panel-default
+          %h1.margin-base-vertical Have you ever seen the rain?
+          %p
+            Someone told me long ago there's a calm before the storm. I know, It's been comin for some time.
+          %p
+            When it's over, so they say, it'll rain a sunny day. I know,	Shinin down like water.
+          %p
+            I want to know, have you ever seen the rain?
+          %form.margin-base-vertical
+            %p.input-group
+              %span.input-group-addon
+                %span.icon-envelope
+              %input.form-control.input-lg{:name => "email", :placeholder => "jonsnow@knowsnothi.ng", :type => "text"}/
+            %p.help-block.text-center
+              %small We won't send you spam. Unsubscribe at any time.
+            %p.text-center
+              %button.btn.btn-success.btn-lg{:type => "submit"} Keep me posted
+          .margin-base-vertical
+            %small.text-muted
+              %a{:href => "http://farm4.staticflickr.com/3678/9071700493_2044321565_h.jpg"}> Background picture by Nick Freeman @flickr
+              \. Used under
+              = succeed "." do
+                %a{:href => "http://creativecommons.org/licenses/by/2.0/deed.en"} Creative Commons - Attribution
+        / //main content
+      / //row
+    / //container
