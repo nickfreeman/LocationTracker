@@ -20,7 +20,6 @@
       
   %body
     %div#map-canvas
-    =javascript_include_tag "map.js"
     :javascript
       var locations = #{@locations};
       initialize(locations);
