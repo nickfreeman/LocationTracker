@@ -10,7 +10,7 @@ function initialize(locations){
 		map: map});
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			return function() {
-				infowindow.setContent("Shaumik!");
+				infowindow.setContent(locations[i][2]);
 				infowindow.open(map, marker);}
 		})(marker, i));
 	}

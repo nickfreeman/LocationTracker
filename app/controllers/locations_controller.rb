@@ -18,6 +18,9 @@ class LocationsController < ApplicationController
 		@location = Location.new
 		@location.longitude = params[:longitude]
 		@location.latitude = params[:latitude]
+		puts"**********************************************************"
+		@location.name = current_user.name
+		puts @location.name
 		if params[:id]
 			@location.id = params[:id]
 		end
@@ -31,6 +34,9 @@ class LocationsController < ApplicationController
 		@location = Location.find(params[:id])
 		@location.longitude = params[:longitude]
 		@location.latitude = params[:latitude]
+		@location.name = current_user.name
+		puts "---------------------------------------------------------"
+		puts @location.name
 		if @location.save!
 			flash[:notice] = "Location successfully updated"
 			redirect_to locations_path

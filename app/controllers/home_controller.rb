@@ -6,9 +6,9 @@ class HomeController < ApplicationController
 	if Location.count != 0
 		geolocations = Location.all
 		@locations = []
-		geolocations.each{ |locate| @locations.push([locate.latitude,locate.longitude])}
+		geolocations.each{ |locate| @locations.push([locate.latitude,locate.longitude, locate.name])}
 	else
-		@locations = [[37.488902,-122.230657]]
+		@locations = [[37.488902,-122.230657, 'HeadQuarter']]
 	end
     #puts "---------------******************_----------------------**************--------------------"
     #puts @locations

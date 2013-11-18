@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
 	def seek_email(member)
 			@user = member
-			@url = 'http://facebook.com'
+			@url = 'localhost:3000/locations'
 			mail(to:@user.email, subject:"[BAMRU Location Tracker] Where Are You?")
 	end
 
