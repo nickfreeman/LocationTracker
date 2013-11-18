@@ -1,35 +1,73 @@
 !!!
-%html{:lang => "en"}
+%html
   %head
-    %meta{:charset => "utf-8"}
-      %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-        %meta{:content => "", :name => "description"}
-          %meta{:content => "", :name => "author"}
-            %link{:href => "../../assets/ico/favicon.png", :rel => "shortcut icon"}
-              %title BAMRU Location Tracker
-              / Latest compiled and minified CSS
-              %link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
-                / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
-                /[if lt IE 9]
-                  <script src="../../assets/js/html5shiv.js"></script>
-                  <script src="../../assets/js/respond.min.js"></script>
-  %body
-    = render 'home/topbar'
-    / Main jumbotron for a primary marketing message or call to action
-    .jumbotron
-      .container
-        %h1 Hello BAMRU & Team!
-        %img.img-rounded{:alt => "BAMRU", :src => "http://bamru.org/images/TopBanner.jpg"}
-          %img.img-rounded{:alt => "BAMRU", :src => "http://bamru.org/images/BottomBanner.jpg"}
-    %hr
-      %footer
-        %p &copy; BAMRU 2013
-      / /container
-      /
-        Bootstrap core JavaScript
-        \==================================================
-      / Placed at the end of the document so the pages load faster
-      %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-      / Latest compiled and minified JavaScript
-      %script{:src => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
-      
+    %title BAMRU Location Tracker
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Bootstrap
+    %link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
+      %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}/
+      %link{:href => "http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600", :rel => "stylesheet"}/
+      :css
+        /* http://css-tricks.com/perfect-full-page-background-image/ */
+        html {
+          background: url("http://farm4.staticflickr.com/3678/9071700493_2044321565_h.jpg") no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+
+        body {
+          padding-top: 20px;
+          font-size: 16px;
+          font-family: "Open Sans",serif;
+          background: transparent;
+        }
+
+        h1 {
+          font-family: "Abel", Arial, sans-serif;
+          font-weight: 400;
+          font-size: 40px;
+        }
+
+        /* Override B3 .panel adding a subtly transparent background */
+        .panel {
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .margin-base-vertical {
+          margin: 40px 0;
+        }
+
+    %body
+    .container
+      .row
+        .col-md-6.col-md-offset-3.panel.panel-default
+          %h1.margin-base-vertical Welcome to BAMRU Location Tracker!
+          %p
+            Register or Sign in below.
+            %h2 Sign in
+            = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+              %p.input-group
+                %span.input-group-addon
+                  %span.icon-envelope
+                = f.email_field :email, :autofocus => true, :placeholder => "Email, ex: bamru@bamru.org", :class => "form-control input-lg"
+              %p.input-group
+                %span.input-group-addon
+                  %span.icon-lock  
+                = f.password_field :password, :placeholder => "Password", :class => "form-control input-lg"
+              - if devise_mapping.rememberable?
+                .checkbox
+                  = f.check_box :remember_me
+                  = f.label :remember_me
+              %p.text-center
+                = f.submit "Sign in", :class =>'btn btn-primary btn-success btn-lg'
+            = render "devise/shared/links"
+            %p.help-block.text-center
+              %small &copy; BAMRU 2013
+          .margin-base-vertical
+            %small.text-muted
+              %a{:href => "http://farm4.staticflickr.com/3678/9071700493_2044321565_h.jpg"}> Background picture by Nick Freeman @flickr
+        / //main content
+      / //row
+    / //container
