@@ -10,51 +10,60 @@
       :css
         /* http://css-tricks.com/perfect-full-page-background-image/ */
         html {
-        	background: url("http://farm4.staticflickr.com/3678/9071700493_2044321565_h.jpg") no-repeat center center fixed; 
-        	-webkit-background-size: cover;
-        	-moz-background-size: cover;
-        	-o-background-size: cover;
-        	background-size: cover;
+          background: url("http://farm4.staticflickr.com/3678/9071700493_2044321565_h.jpg") no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
         }
 
         body {
-        	padding-top: 20px;
-        	font-size: 16px;
-        	font-family: "Open Sans",serif;
-        	background: transparent;
+          padding-top: 20px;
+          font-size: 16px;
+          font-family: "Open Sans",serif;
+          background: transparent;
         }
 
         h1 {
-        	font-family: "Abel", Arial, sans-serif;
-        	font-weight: 400;
-        	font-size: 40px;
+          font-family: "Abel", Arial, sans-serif;
+          font-weight: 400;
+          font-size: 40px;
         }
 
         /* Override B3 .panel adding a subtly transparent background */
         .panel {
-        	background-color: rgba(255, 255, 255, 0.9);
+          background-color: rgba(255, 255, 255, 0.9);
         }
 
         .margin-base-vertical {
-        	margin: 40px 0;
+          margin: 40px 0;
         }
 
-	  %body
+    %body
     .container
       .row
         .col-md-6.col-md-offset-3.panel.panel-default
-          %h1.margin-base-vertical Hello BAMRU!
+          %h1.margin-base-vertical Welcome to BAMRU Location Tracker!
           %p
-            Someone told me long ago there's a calm before the storm. I know, It's been comin for some time.
-          %p
-            When it's over, so they say, it'll rain a sunny day. I know,	Shinin down like water.
-          %p
-            I want to know, have you ever seen the rain?
-          %form.margin-base-vertical
+            Register or Sign in below.
+          %form
+            %h2 Sign in
+            = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+              %p.input-group
+                %span.input-group-addon
+                  %span.icon-envelope
+                = f.email_field :email, :autofocus => true, :placeholder => "bamru@bamru.org", :class => "form-control input-lg"
+              = f.password_field :password
+              - if devise_mapping.rememberable?
+                .checkbox
+                  = f.label :remember_me
+              %p.text-center
+                = f.submit "Sign in", :class =>'btn btn-primary btn-success btn-lg'
+            = render "devise/shared/links"
             %p.input-group
               %span.input-group-addon
                 %span.icon-envelope
-              %input.form-control.input-lg{:name => "email", :placeholder => "bamru@bamru.org", :type => "text"}/
+              %input.form-control.input-lg{:name => "email", :placeholder => "bamru@bamru.org", :type => "text"}
             %p.help-block.text-center
               %small We won't send you spam. Unsubscribe at any time.
             %p.text-center

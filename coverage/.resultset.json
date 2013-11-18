@@ -25,6 +25,17 @@
       ],
       "/Users/nickfreeman/code/LocationTracker/app/helpers/home_helper.rb": [
         1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/nickfreeman/code/LocationTracker/app/controllers/home_controller.rb": [
@@ -185,6 +196,6 @@
         null
       ]
     },
-    "timestamp": 1384746602
+    "timestamp": 1384756772
   }
 }
