@@ -19,6 +19,8 @@ module NavigationHelpers
       locations_path
     when /^the success page for "(.*)"$/
       success_members_path
+    when /^the Sign in page$/
+      '/users/sign_in'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/shaumik/LocationTracker/LocationTracker/app/models/user.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/models/user.rb": [
         1,
         null,
         null,
@@ -14,34 +14,38 @@
         null,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/application_controller.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/helpers/application_helper.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/helpers/home_helper.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/home_controller.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/controllers/home_controller.rb": [
         1,
         1,
         null,
         null,
         1,
-        0,
-        0,
+        1,
         0,
         0,
         0,
         null,
+        1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/locations_controller.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/controllers/locations_controller.rb": [
         1,
         null,
         1,
@@ -89,13 +93,13 @@
         null,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/models/location.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/models/location.rb": [
         1,
         1,
         null,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/controllers/members_controller.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/controllers/members_controller.rb": [
         1,
         null,
         1,
@@ -140,41 +144,41 @@
         1,
         null,
         2,
-        2,
+        6,
         null,
-        0,
+        2,
         null,
         null,
         null,
         1,
-        0,
-        0,
+        2,
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         null,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/models/member.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/models/member.rb": [
         1,
         1,
         null
       ],
-      "/home/shaumik/LocationTracker/LocationTracker/app/mailers/user_mailer.rb": [
+      "/Users/nickfreeman/code/LocationTracker/app/mailers/user_mailer.rb": [
         1,
         1,
         null,
         1,
-        2,
-        2,
-        2,
+        6,
+        6,
+        6,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1384631758
+    "timestamp": 1384745833
   }
 }
