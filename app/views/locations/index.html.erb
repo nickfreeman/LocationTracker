@@ -15,10 +15,10 @@
 <table id="location_table">
 	<thead>
 		<tr>
-			<th class="location_row"> Name </th>
+			<th class="location_row"> <%= link_to "Name", locations_path(:sort => "name"), :id => "sort_name" %> </th>
 			<th class="location_row"> Longitude </th>
 			<th class="location_row"> Latitude </th>
-			<th class="location_row"> Time </th>
+			<th class="location_row"> <%= link_to "Time", locations_path(:sort => "time"), :id => "sort_time" %> </th>
 		</tr>
 	</thead>
 	<tbody>

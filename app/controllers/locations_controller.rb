@@ -8,6 +8,9 @@ class LocationsController < ApplicationController
 	def index
 		#TODO create a map that shows the corresponding stuff
 		@locations = Location.all
+		#Sorting the list of locations
+		@locations = Location.find(:all, :order => 'name') if params[:sort] == 'name'
+		@locations = Location.find(:all, :order => 'updated_at') if params[:sort] == 'time'
 	end
 	
 	def new
@@ -18,9 +21,9 @@ class LocationsController < ApplicationController
 		@location = Location.new
 		@location.longitude = params[:longitude]
 		@location.latitude = params[:latitude]
-		puts"**********************************************************"
+		#puts"**********************************************************"
 		@location.name = current_user.name
-		puts @location.name
+		#puts @location.name
 		if params[:id]
 			@location.id = params[:id]
 		end
@@ -35,8 +38,8 @@ class LocationsController < ApplicationController
 		@location.longitude = params[:longitude]
 		@location.latitude = params[:latitude]
 		@location.name = current_user.name
-		puts "---------------------------------------------------------"
-		puts @location.name
+		#puts "---------------------------------------------------------"
+		#puts @location.name
 		if @location.save!
 			flash[:notice] = "Location successfully updated"
 			redirect_to locations_path
