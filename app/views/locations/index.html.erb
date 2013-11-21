@@ -4,12 +4,13 @@
 <%= csrf_meta_tag %>
 <%= stylesheet_link_tag "location"%>
 
-<button name="find_my_location" id="find_my_location">
+<button name="find_my_location" id="find_my_location" class="location_button">
 	Find My Location
 </button>
 
 <h3 id="location_show"></h3>
 
+<%= button_to "Home", {controller: "home"}, id: "home_link", class: "location_button" %>
 
 <table id="location_table">
 	<thead>
@@ -21,7 +22,7 @@
 	</thead>
 	<tbody>
 		<%- @locations.each do |location| %>
-		<tr>
+		<tr class="full_row">
 			<td class="location_row"> <%= location.longitude %> </td>
 			<td class="location_row"> <%= location.latitude %> </td>
 			<td class="location_row"> <%= location.updated_at %> </td>

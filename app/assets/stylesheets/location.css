@@ -1,17 +1,85 @@
+#panel {
+	position:absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 80%;
+	height: 900px;
+	background-color: rgba(50, 118, 177, .1);
+	z-index: -20;
+}
+
 #location_table {
-	width: 600px;	
+	width: 600px;
+	font-family: "Abel",Arial,sans-serif;
+	position:absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 280px;	
 }
 
 .location_row {
 	width: 200px;
+	background-color: #eeeeee;
 }
 
+.full_row {
+	background-color: #eeeeee;
+}
+.full_row:nth-child(even) {
+	background-color: #dddddd;
+}
+
+#location_show {
+	font-family: "Abel",Arial,sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+#home_link {
+	height: 80px;
+	top: 150px;
+}
+
+.location_button {
+	width: 300px;
+	background-color: rgb(50, 118, 177);
+	border-radius: 20px;
+	border-color: rgba(40, 94, 142);
+	color: #ffffff;
+	font-size: 30px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+	font-family: "Abel",Arial,sans-serif;
+}
+
+.location_button:hover {
+	background-color: rgb(40, 108, 167);
+}
 
 #find_my_location {
 	height: 120px;
-	width: 300px;
+	top: 20px;
 	background-color: #4444cc;
-	border-radius: 20px;
-	color: #ffffff;
-	font-size: 30px;
+}
+
+#find_my_location:hover {
+	background-color: #3333bb;
+}
+
+
+
+/* Adding extra styles that will only appear if the user is on mobile 
+For now, don't show them the table since that won't appear well on mobile*/
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	
+	#location_table {
+		display:none;
+	}
 }

@@ -45,7 +45,6 @@ $(document).ready(function() {
 			alert("Your position was not recorded correctly");
 		}
 		param = {latitude: myPosition[0], longitude: myPosition[1]};
-		alert("Starting the ajax call");
 		$.ajax({
 			type: 'POST',
 			url: "/locations",
