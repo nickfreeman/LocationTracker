@@ -5,6 +5,30 @@ class MembersController < ApplicationController
 
   def index
     @members = User.all
+   
+    #sort by name, ascending then descending
+    if (params[:sort] == 'name')
+		if ((not session[:sort_name]) or session[:sort_name] == 'ascend')
+			@members = User.find(:all, :order => 'name ASC')
+			session[:sort_name] = 'descend'
+		else
+			@members = User.find(:all, :order => 'name DESC')
+			session[:sort_name] = 'ascend'
+		end
+	end
+	#sort by email, ascending then descending
+	if (params[:sort] == 'email')
+		if ((not session[:sort_email]) or session[:sort_email] == 'ascend')
+			@members = User.find(:all, :order => 'email ASC')
+			session[:sort_email] = 'descend'
+		else
+			@members = User.find(:all, :order => 'email DESC')
+			session[:sort_email] = 'ascend'
+		end
+	end
+	
+	
+	
   end
 
   def new
@@ -15,20 +39,8 @@ class MembersController < ApplicationController
     redirect_to members_path
   end
 
-	#def email
-		#@members = Member.all
-		#if @members.length == 2
-			#flash[:notice] =  "No members available."
-			#render "/index"
-		#else
-			#@members.each do |member|
-				#UserMailer.seek_email(member).deliver
-			#end
-			#redirect_to "/success"
-		#end
-	#end
 
-	def email		
+  def email		
     if params[:members_all]
       @members = User.all
     else
@@ -46,15 +58,15 @@ class MembersController < ApplicationController
 			end
 			redirect_to success_members_path(:members => params[:members], :members_all => params[:members_all])
 		end
-	end
+  end
 	
-	def success
+  def success
     if params[:members_all]
       @members = User.all
     else
       @members_temp = (params[:members]? params[:members].keys : [])
 		  @members = User.find(:all, :conditions => {:name => @members_temp})
     end
-	end
+  end
 
 end

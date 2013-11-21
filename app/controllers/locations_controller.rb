@@ -8,9 +8,25 @@ class LocationsController < ApplicationController
 	def index
 		#TODO create a map that shows the corresponding stuff
 		@locations = Location.all
-		#Sorting the list of locations
-		@locations = Location.find(:all, :order => 'name') if params[:sort] == 'name'
-		@locations = Location.find(:all, :order => 'updated_at') if params[:sort] == 'time'
+		#Sorting the list of locations ascending the first click then by descending the second click
+		if (params[:sort] == 'name')
+			if ((not session[:sort_name]) or session[:sort_name] == 'ascend')
+				@locations = Location.find(:all, :order => 'name ASC')
+				session[:sort_name] = 'descend'
+			else
+				@locations = Location.find(:all, :order => 'name DESC')
+				session[:sort_name] = 'ascend'
+			end
+		end
+		if (params[:sort] == 'time')
+			if ((not session[:sort_time]) or session[:sort_time] == 'ascend')
+				@locations = Location.find(:all, :order => 'updated_at ASC')
+				session[:sort_time] = 'descend'
+			else
+				@locations = Location.find(:all, :order => 'updated_at DESC')
+				session[:sort_time] = 'ascend'
+			end
+		end
 	end
 	
 	def new
