@@ -15,6 +15,7 @@
 <table id="location_table">
 	<thead>
 		<tr>
+			<th class="location_row"> Name </th>
 			<th class="location_row"> Longitude </th>
 			<th class="location_row"> Latitude </th>
 			<th class="location_row"> Time </th>
@@ -23,6 +24,7 @@
 	<tbody>
 		<%- @locations.each do |location| %>
 		<tr class="full_row">
+			<td class="location_row"> <%= location.name %> </td>
 			<td class="location_row"> <%= location.longitude %> </td>
 			<td class="location_row"> <%= location.latitude %> </td>
 			<td class="location_row"> <%= location.updated_at %> </td>
