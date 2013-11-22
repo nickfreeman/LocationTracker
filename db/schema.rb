@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20131118013613) do
     t.datetime "updated_at",                             :null => false
     t.string   "name"
     t.string   "role"
-    t.string   "latitude"
+    t.string   "latitutude"
     t.string   "longitude"
     t.datetime "last_checkin_at"
   end

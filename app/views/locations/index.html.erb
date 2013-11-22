@@ -4,30 +4,55 @@
 <%= csrf_meta_tag %>
 <%= stylesheet_link_tag "location"%>
 
-<button name="find_my_location" id="find_my_location" class="location_button">
-	Find My Location
-</button>
+
 
 <h3 id="location_show"></h3>
 
 <%= button_to "Home", {controller: "home"}, id: "home_link", class: "location_button" %>
 
-<table id="location_table">
-	<thead>
-		<tr>
-			<th class="location_row"> Longitude </th>
-			<th class="location_row"> Latitude </th>
-			<th class="location_row"> Time </th>
-		</tr>
-	</thead>
-	<tbody>
-		<%- @locations.each do |location| %>
-		<tr class="full_row">
-			<td class="location_row"> <%= location.longitude %> </td>
-			<td class="location_row"> <%= location.latitude %> </td>
-			<td class="location_row"> <%= location.updated_at %> </td>
-		</tr>
-		<%- end %>
-	</tbody>
-</table>
 
+<% if user_signed_in? %>
+
+	<button name="find_my_location" id="find_my_location" class="location_button">
+		Find My Location
+	</button>
+	<!-- Show the locations table with the various times -->
+	<table id="location_table">
+		<thead>
+			<tr>
+				<th class="location_row"> Name </th>
+				<th class="location_row"> Longitude </th>
+				<th class="location_row"> Latitude </th>
+				<th class="location_row"> Time </th>
+			</tr>
+		</thead>
+		<tbody>
+			<%- @locations.each do |location| %>
+			<tr class="full_row">
+				<td class="location_row"> <%= location.name %> </td>
+				<td class="location_row"> <%= location.longitude %> </td>
+				<td class="location_row"> <%= location.latitude %> </td>
+				<td class="location_row"> <%= location.updated_at %> </td>
+			</tr>
+			<%- end %>
+		</tbody>
+	</table>
+<% else %>
+	<div id="sign_in">
+		<!-- Show the login to get the user credentials -->
+		<h3> Sign in to share location </h3>
+		<!-- Potentially set a flag here to tell the registration to redirect back here -->
+		<div id="form">
+			<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+				<%= f.email_field :email, :autofocus => true, :placeholder => "Email" %>
+				<%= f.password_field :password, :placeholder => "Password" %>
+				<% if devise_mapping.rememberable? %>
+					<%= f.check_box :remember_me %>
+					<%= f.label :remember_me %>
+				<% end %>
+				<%= f.submit "Sign in" %>
+			<% end %>
+		</div>
+		<%= link_to "Sign up for new users", new_user_registration_path %>
+	</div>
+<% end %>

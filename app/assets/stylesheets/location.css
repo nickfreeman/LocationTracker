@@ -22,7 +22,6 @@
 
 .location_row {
 	width: 200px;
-	background-color: #eeeeee;
 }
 
 .full_row {
@@ -69,6 +68,17 @@
 
 #find_my_location:hover {
 	background-color: #3333bb;
+}
+
+#sign_in {
+	height: 200px;
+	width: 330px;
+	top: 300px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+	font-family: "Abel",Arial,sans-serif;
 }
 
 
