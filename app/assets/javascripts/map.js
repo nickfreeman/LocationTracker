@@ -1,6 +1,6 @@
 function initialize(locations){
 	var map = new google.maps.Map(document.getElementById('map-canvas'), 
-	{zoom: 10,center: new google.maps.LatLng(locations[0][0], locations[0][1]),
+	{zoom: 8,center: new google.maps.LatLng(locations[0][0], locations[0][1]),
 	mapTypeId: google.maps.MapTypeId.ROADMAP});
 
 	var infowindow = new google.maps.InfoWindow();

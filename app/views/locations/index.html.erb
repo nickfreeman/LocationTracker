@@ -13,17 +13,13 @@
 
 <% if user_signed_in? %>
 
-	<button name="find_my_location" id="find_my_location" class="location_button">
-		Find My Location
-	</button>
-	<!-- Show the locations table with the various times -->
 	<table id="location_table">
 		<thead>
 			<tr>
-				<th class="location_row"> Name </th>
+				<th class="location_row"> <%= link_to "Name", locations_path(:sort => "name"), :id => "sort_name" %> </th>
 				<th class="location_row"> Longitude </th>
 				<th class="location_row"> Latitude </th>
-				<th class="location_row"> Time </th>
+				<th class="location_row"> <%= link_to "Time", locations_path(:sort => "time"), :id => "sort_time" %> </th>
 			</tr>
 		</thead>
 		<tbody>
@@ -37,6 +33,15 @@
 			<%- end %>
 		</tbody>
 	</table>
+
+
+
+
+	<button name="find_my_location" id="find_my_location" class="location_button">
+		Find My Location
+	</button>
+	
+	<!-- Show the locations table with the various times -->
 <% else %>
 	<div id="sign_in">
 		<!-- Show the login to get the user credentials -->
