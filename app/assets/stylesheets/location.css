@@ -34,7 +34,12 @@
 #location_show {
 	font-family: "Abel",Arial,sans-serif;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 20px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+	top: 20px;
 }
 
 #home_link {
@@ -58,6 +63,10 @@
 
 .location_button:hover {
 	background-color: rgb(40, 108, 167);
+}
+
+.hide {
+	display: none;
 }
 
 #find_my_location {
