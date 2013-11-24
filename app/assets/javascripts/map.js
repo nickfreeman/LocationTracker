@@ -10,7 +10,9 @@ function initialize(locations){
 		map: map});
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			return function() {
-				infowindow.setContent(locations[i][2]);
+				//put together the display tag with the name and the last check in information
+				var name_and_checkin = "<p>" + "Name: " + locations[i][2] + "<br />" + "Checked In: " + locations[i][3] + "</p>"; 
+				infowindow.setContent(name_and_checkin);
 				infowindow.open(map, marker);}
 		})(marker, i));
 	}
