@@ -200,6 +200,9 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   simplecov
   sqlite3
+<<<<<<< HEAD
   table_print
+=======
   twitter-typeahead-rails
+>>>>>>> e0f3c1362ff1e86d30117b4f254f631a248681ef
   uglifier (>= 1.0.3)

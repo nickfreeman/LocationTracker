@@ -63,3 +63,5 @@ gem 'devise'
 
 #use Haml for templates
 gem 'haml'
+
+gem 'twitter-typeahead-rails'
