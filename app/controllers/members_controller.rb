@@ -40,14 +40,14 @@ class MembersController < ApplicationController
 
 
   def email		
-    if params[:members_all]
-      @members = User.all
-    else
+    #if params[:members_all]
+      #@members = User.all
+    #else
       @members_temp = (params[:members]? params[:members].keys : [])
 		  @members = User.find(:all, :conditions => {:name => @members_temp})
-    end
+    #end
 
-		puts @members.length
+		#puts @members.length
 		if @members.length == 0
 			flash[:notice] = "No members available"
 			redirect_to "/members"

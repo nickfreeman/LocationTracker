@@ -5,6 +5,14 @@
 
 %h1 Member to Member Query
 
+%p Select Tags:
+All
+= check_box_tag("members_all", "members_all", false, :onclick => "checkAll(this)")
+- Tags.uniq.pluck(:label).sort.each do |tag|
+	= tag 
+	=check_box_tag("#{tag}", "#{tag}", false, :onclick => "checkTag(this)")
+
+
 %table#members
 	%thead
 		%tr
@@ -16,18 +24,12 @@
 	%tbody
 
 	= form_tag "members/email", :method => :get, :id => 'send_form' do
-		%tr
-			%td= \ 
-			%td Select to send to all members
-			%td= \
-			%td= \
-			%td= check_box_tag "members_all"
 		- @members.each do |member|
 			%tr
 				%td= member.name
 				%td= member.email
 				%td= member.role
-				%td= Tags.find_all_by_user_id(member.id).map{|record| record.label}*", "
-				%td= check_box_tag "members[#{member.name}]"
+				%td= labels = Tags.find_all_by_user_id(member.id).map{|record| record.label}*", "
+				%td= check_box_tag("members[#{member.name}]", labels)
 		= submit_tag 'Send Request', :id => 'request_sent'
 = button_to "Home", {controller: "home"}, id: "home_link"
