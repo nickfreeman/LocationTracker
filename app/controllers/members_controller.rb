@@ -5,7 +5,6 @@ class MembersController < ApplicationController
 
   def index
     @members = User.all
-   
     #sort by name, ascending then descending
     if (params[:sort] == 'name')
 		if ((not session[:sort_name]) or session[:sort_name] == 'ascend')
