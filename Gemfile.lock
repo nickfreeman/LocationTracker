@@ -164,6 +164,10 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    twitter-typeahead-rails (0.9.3)
+      actionpack (>= 3.1)
+      jquery-rails
+      railties (>= 3.1)
     tzinfo (0.3.38)
     uglifier (2.3.1)
       execjs (>= 0.3.0)
@@ -195,4 +199,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   simplecov
   sqlite3
+  twitter-typeahead-rails
   uglifier (>= 1.0.3)

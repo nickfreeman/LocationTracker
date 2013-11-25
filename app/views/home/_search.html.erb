@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var data = (#{@autocomplete_people.to_json});
+            $("#search").autocomplete({source:data});
+        });
+    </script>
+</head>
+
+<body>
+    <input id="search" type="text"/>
+</body>
+</html>
