@@ -18,6 +18,7 @@ group :development, :test do
   gem 'launchy'
   gem 'actionmailer'
   gem 'simplecov'
+	gem 'table_print'
 end
 
 group :test do

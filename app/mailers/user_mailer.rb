@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
 	def seek_email(member)
 			@user = member
-			@url = 'localhost:3000/locations'
+			@url = 'http://locationtracker.herokuapp.com/locations'
 			mail(to:@user.email, subject:"[BAMRU Location Tracker] Where Are You?")
 	end
 

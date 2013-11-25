@@ -13,7 +13,14 @@ User.create!({:name => 'Yina Jin', :email => 'solaris.jin@gmail.com', :password 
 User.create!({:name => 'Shaumik Mondal', :email => 'themaster_759@hotmail.com', :password => 'mondalshaumik', :password_confirmation => 'mondalshaumik', :role => 'AHC', :remember_me => 'yes'})
 User.create!({:name => 'James Kim', :email => 'james@email.com', :password => 'kimjames', :password_confirmation => 'kimjames', :role => 'AHC', :remember_me => 'yes'})
 
-
+Tags.create!({:label => 'Monday', :user_id => '1'})
+Tags.create!({:label => 'Tuesday', :user_id => '1'})
+Tags.create!({:label => 'Wednesday', :user_id => '1'})
+Tags.create!({:label => 'Wednesday', :user_id => '2'})
+Tags.create!({:label => 'Thursday', :user_id => '3'})
+Tags.create!({:label => 'Friday', :user_id => '4'})
+Tags.create!({:label => 'Wednesday', :user_id => '5'})
+Tags.create!({:label => 'Friday', :user_id => '5'})
 
 #Location.create!({:latitude => -34.397, :longitude => 150.644})
 #Location.create!({:latitude => -34.200, :longitude => 150.600})
