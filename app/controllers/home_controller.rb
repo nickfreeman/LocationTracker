@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   	@locations = [[37.488902,-122.230657, 'HeadQuarter','']]
     
 	  if Location.count != 0
-      if params[:search_name] == nil
+      if params[:search_name] == nil or params[:search_name] == ""
         
     		@geolocations = Location.all
         
