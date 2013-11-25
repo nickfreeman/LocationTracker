@@ -5,7 +5,6 @@ class HomeController < ApplicationController
   def show
     @autocomplete_people = User.all.map(&:name)
   	@locations = [[37.488902,-122.230657, 'HeadQuarter','']]
-    debugger
 	  if Location.count != 0
       if params[:search_name] == nil
     		geolocations = Location.all

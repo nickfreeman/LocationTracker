@@ -33,8 +33,6 @@ GEM
     arel (3.0.3)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
-    bootstrap-typeahead-rails (0.9.3.3)
-      railties (>= 3.0)
     builder (3.0.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -166,6 +164,10 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    twitter-typeahead-rails (0.9.3)
+      actionpack (>= 3.1)
+      jquery-rails
+      railties (>= 3.1)
     tzinfo (0.3.38)
     uglifier (2.3.1)
       execjs (>= 0.3.0)
@@ -181,7 +183,6 @@ PLATFORMS
 DEPENDENCIES
   ZenTest
   actionmailer
-  bootstrap-typeahead-rails
   capybara
   coffee-rails (~> 3.2.1)
   cucumber-rails
@@ -198,4 +199,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   simplecov
   sqlite3
+  twitter-typeahead-rails
   uglifier (>= 1.0.3)
