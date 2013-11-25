@@ -35,15 +35,8 @@
               %li
                 = link_to "Sign out", destroy_user_session_path, :method => :delete
               %li
-                = form_tag '', :method => 'get' do
-                  = text_field_tag :search_name, params[:search_name]
-                  :javascript
-                    $(document).ready(function() {
-                      var data = #{@autocomplete_people.to_json};
-                      $("#search_name").typeahead({
-                        source: data
-                      }); 
-                    });
+                = form_tag({:action => 'show', :controller => 'home'}, {:class => 'navbar-form'}) do
+                  = text_field_tag :search_name, params[:search_name], :class=> "form-control"
           - if not user_signed_in?
             %ul.nav.navbar-nav.navbar-right
               %li= link_to "Sign up", new_user_registration_path
@@ -63,5 +56,12 @@
       / Latest compiled and minified JavaScript
       %script{:src => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
       %script{:src =>"//twitter.github.com/typeahead.js/releases/latest/typeahead.js"}
+      :javascript
+        $(document).ready(function() {
+          var data = #{@autocomplete_people.to_json};
+          $("#search_name").typeahead({
+            source: data
+          }); 
+        });
 
       
