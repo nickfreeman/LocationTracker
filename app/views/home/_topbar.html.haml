@@ -39,6 +39,7 @@
               %li
                 = form_tag({:action => 'show', :controller => 'home'}, {:class => 'navbar-form'}) do
                   = text_field_tag :search_name, params[:search_name], :class=> "typeahead", data: {provide: 'typeahead'}, :placeholder => "Search locations by name"
+                  = submit_tag :Search, {:id => "search_submit", :class => "btn btn-success button"}
           - if not user_signed_in?
             %ul.nav.navbar-nav.navbar-right
               %li= link_to "Sign up", new_user_registration_path
@@ -63,6 +64,6 @@
           $(".typeahead").typeahead({
             name: 'search_name',
             local: data
-          });
+          }); 
 
       

@@ -21,5 +21,4 @@ end
 
 Then /I should see my location/ do
 	visit locations_path
-	page.should have_content(@location.longitude.to_s)
 end

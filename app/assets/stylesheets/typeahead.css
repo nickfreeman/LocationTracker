@@ -13,6 +13,10 @@
   outline: none;
 }
 
+.hidden {
+  display:none;
+}
+
 .typeahead {
   background-color: #fff;
 }
