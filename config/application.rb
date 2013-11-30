@@ -60,5 +60,7 @@ module LocationTracker
     config.assets.version = '1.0'
     
     config.assets.precompile += ['map.js']
+
+    config.time_zone = 'Pacific Time (US & Canada)'
   end
 end
