@@ -1,0 +1,28 @@
+-#  This file is app/views/tags/index.html.haml
+
+%h1 New Tag
+
+%p Tag Name
+
+
+
+%table#members
+	%thead
+		%tr
+			%th Name
+			%th Email
+			%th Role
+			%th Select
+	%tbody
+
+	= form_tag tags_path, :method => :post, :id => 'send_form' do
+		- @members.each do |member|
+			%tr
+				%td= member.name
+				%td= member.email
+				%td= member.role
+				%td= check_box_tag("members[#{member.name}]", member.id)
+		= text_field_tag 'tagname'
+		= submit_tag 'Create Tag', :id => 'create_tag'
+= button_to "Home", {controller: "home"}, id: "home_link"
+= button_to "Back to Email", "/members/", method: "get"

@@ -8,7 +8,7 @@ class TagsController < ApplicationController
   def create
     @users = User.find(params[:members].values)
     @users.each do |user|
-      Tags.create!(:user_id=>user.id, :label => params[:tagname])
+      Tags.create!(:user_id=>user.id, :label => params[:tagname]? params[:tagname]:"FAILED")
     end
     redirect_to members_path
   end
