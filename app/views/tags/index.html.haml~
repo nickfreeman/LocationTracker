@@ -1,10 +1,7 @@
 -#  This file is app/views/tags/index.html.haml
 
 %h1 New Tag
-
 %p Tag Name
-
-
 
 %table#members
 	%thead
@@ -22,7 +19,16 @@
 				%td= member.email
 				%td= member.role
 				%td= check_box_tag("members[#{member.name}]", member.id)
-		text_field_tag 'tagname'
+		= text_field_tag 'tagname'
 		= submit_tag 'Create Tag', :id => 'create_tag'
 = button_to "Home", {controller: "home"}, id: "home_link"
 = button_to "Back to Email", "/members/", method: "get"
+
+
+%h1 Delete Tag
+= form_tag massdel_tags_path, :method => :get, :id => 'del_form' do
+	- Tags.uniq.pluck(:label).sort.each do |uniqtag|
+		= uniqtag 
+		= check_box_tag("#{uniqtag.id}", "#{uniqtag}", false)
+	= submit_tag 'Delete Tag', :id => 'remove_tag'
+

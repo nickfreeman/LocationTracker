@@ -13,4 +13,13 @@ class TagsController < ApplicationController
     redirect_to members_path
   end
 
+  def massdel
+    params.keys.each do |uniqtag|
+      if params[uniqtag]==uniqtag
+        Tags.where(:label => uniqtag).destroy_all
+      end
+    end
+    redirect_to members_path
+  end
+
 end
