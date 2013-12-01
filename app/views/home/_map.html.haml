@@ -22,4 +22,10 @@
     %div#map-canvas	
     :javascript 
       var locations = #{@locations};
-      initialize(locations);
+      var tracing = #{@tracing};
+      if(tracing){
+        trace_map(locations);
+      }
+      else{
+        initialize(locations);
+      }
