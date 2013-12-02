@@ -5,7 +5,6 @@ class HomeController < ApplicationController
   def show()
     #puts "\n\n\n\n\n"
     #puts params[:search_time]
-    #testtime = 30
 
     @autocomplete_people = User.all.map(&:name)
   	@locations = [[37.488902,-122.230657, 'HeadQuarter','']]
@@ -14,7 +13,7 @@ class HomeController < ApplicationController
       if params[:search_name] == nil or params[:search_name] == ""
         
     		@geolocations = Location.all
-        #@geolocations = Location.where(:created_at => testtime.days.ago..Time.now)
+        #@geolocations = Location.where(:created_at => params[:search_time].minutes.ago..Time.now)
         
   	  else
         
