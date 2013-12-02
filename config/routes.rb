@@ -16,6 +16,12 @@ LocationTracker::Application.routes.draw do
 
   resources :locations
 
+  resources :tags do
+    collection do
+      get 'massdel'
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
