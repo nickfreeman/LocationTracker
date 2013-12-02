@@ -130,6 +130,10 @@ and (max-device-width : 480px) {
   outline: none;
 }
 
+.hidden {
+  display:none;
+}
+
 .typeahead {
   background-color: #fff;
 }
