@@ -5,6 +5,7 @@ class HomeController < ApplicationController
   def show
     @autocomplete_people = User.all.map(&:name)
   	@locations = [[37.488902,-122.230657, 'HeadQuarter','']]
+  	@tracing = false
     
 	  if Location.count != 0
       if params[:search_name] == nil or params[:search_name] == ""
@@ -14,6 +15,7 @@ class HomeController < ApplicationController
   	  else
         
         @geolocations = Location.where("name = ?", params[:search_name])
+        @tracing = true
         
       end
     @geolocations.each{ |locate| @locations.push([locate.latitude,locate.longitude, locate.name, locate.updated_at.to_s])}
