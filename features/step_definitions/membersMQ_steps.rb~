@@ -17,7 +17,7 @@ end
 When /I click or check "members_all"/ do
   @users = User.all
   @users.each do |user|
-    s = user.name.gsub!(" ", "_")
+    s = user.name.gsub(" ", "_")
     step %{I check "members_#{s}"}
   end
 end

@@ -21,3 +21,5 @@ When /I click or check "members_all"/ do
     step %{I check "members_#{s}"}
   end
 end
+
+

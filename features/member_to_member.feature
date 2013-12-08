@@ -36,3 +36,24 @@ Scenario: Not selecting any members should report error message
  When I press "Send Request"
  Then I should be on the members page
  And I should see "No members available"
+
+Scenario: Creating and Deleting a tag
+ Given I am on the members page
+ When I press "Edit Tags"
+ Then I should be on the tags page
+ When I check "members_Yina_Jin"
+ And I check "members_James"
+ And I fill in "tagname" with "test"
+ And I press "create_tag"
+ Then I should see "test"
+ And I am on the members page
+ When I press "Edit Tags"
+ Then I should be on the tags page
+ When I check "test"
+ And I press "remove_tag"
+ And I should be on the members page
+ And I should not see "test"
+ 
+
+
+
