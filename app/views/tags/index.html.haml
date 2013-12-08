@@ -1,9 +1,14 @@
 -#  This file is app/views/tags/index.html.haml
+%link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
 
+= render "tags/topbar"
+
+%br
+%br
 %h1 New Tag
 %p Tag Name
 
-%table#members
+%table.table.table-condensed#members
 	%thead
 		%tr
 			%th Name
@@ -19,10 +24,10 @@
 				%td= member.email
 				%td= member.role
 				%td= check_box_tag("members[#{member.name}]", member.id)
-		= text_field_tag 'tagname'
-		= submit_tag 'Create Tag', :id => 'create_tag'
-= button_to "Home", {controller: "home"}, id: "home_link"
-= button_to "Back to Email", "/members/", method: "get"
+		.form-inline
+			.form-group
+				= text_field_tag 'tagname', nil, :placeholder => "Tag name, ex: A-Team", :class => "form-control"
+			= submit_tag 'Create Tag', :id => 'create_tag', :class => 'btn btn-success'
 
 
 %h1 Delete Tag
@@ -30,5 +35,5 @@
 	- Tags.uniq.pluck(:label).sort.each do |uniqtag|
 		= uniqtag 
 		= check_box_tag("#{uniqtag}", "#{uniqtag}", false)
-	= submit_tag 'Delete Tag', :id => 'remove_tag'
+	= submit_tag 'Delete Tag', :id => 'remove_tag', :class => 'btn btn-danger'
 
