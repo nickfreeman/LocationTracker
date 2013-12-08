@@ -6,7 +6,7 @@
   <body>
     <h2>Where are you, <%= @user.name %>?</h2>
     <p>
-      Please follow this link to report your location: <%= @url %>.
+      Please follow this link to report your location: <a><%= @url %></a>.
     </p>
   </body>
 </html>

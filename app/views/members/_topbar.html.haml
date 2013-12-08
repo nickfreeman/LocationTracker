@@ -9,7 +9,6 @@
               %title BAMRU Location Tracker
               / Latest compiled and minified CSS
               %link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
-              %stylesheet_link_tag "typeahead.css"
 
 
   %body
@@ -25,31 +24,9 @@
           %ul.nav.navbar-nav
             %li.active
               %a{:href => "/"} Home
-            - if user_signed_in? 
-              %li
-                %a{:href => "/members"} Send Location Request
+            - if user_signed_in?
               %li
                 %a{:href => "/locations"} Log Location
-              %li.dropdown
-                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                  Locations by time
-                  %span.caret
-                %ul.dropdown-menu
-                  %li{:role => "presentation"}= link_to "15 min", root_path(:search_time => 15)
-                  %li{:role => "presentation"}= link_to "30 min", root_path(:search_time => 30)
-                  %li{:role => "presentation"}= link_to "1 hour", root_path(:search_time => 60)
-                  %li{:role => "presentation"}= link_to "3 hours", root_path(:search_time => 180)
-                  %li{:role => "presentation"}= link_to "6 hours", root_path(:search_time => 360)
-                  %li{:role => "presentation"}= link_to "12 hours", root_path(:search_time => 720)
-                  %li{:role => "presentation"}= link_to "1 day", root_path(:search_time => 1440)
-                  %li{:role => "presentation"}= link_to "3 days", root_path(:search_time => 4320)
-                  %li{:role => "presentation"}= link_to "1 week", root_path(:search_time => 10080)
-                  %li{:role => "presentation"}= link_to "1 month", root_path(:search_time => 43829)
-                  %li{:role => "presentation"}= link_to "1 year", root_path(:search_time => 525949)
-              %li
-                = form_tag({:action => 'show', :controller => 'home'}, {:class => 'navbar-form'}) do
-                  = text_field_tag :search_name, params[:search_name], :class=> "typeahead", data: {provide: 'typeahead'}, :placeholder => "Search locations by name"
-                  = submit_tag :Search, {:id => "search_submit", :class => "btn btn-success button"}
               %li
                 = link_to "Sign out", destroy_user_session_path, :method => :delete
           - if not user_signed_in?
@@ -70,13 +47,4 @@
       %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
       / Latest compiled and minified JavaScript
       %script{:src => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
-      %script{:src =>"//twitter.github.com/typeahead.js/releases/latest/typeahead.js"}
-      :javascript
-        var data = #{@autocomplete_people.to_json};
-          $(".typeahead").typeahead({
-            name: 'search_name',
-            local: data
-          }); 
-        $('.dropdown-toggle').dropdown();
-
       
