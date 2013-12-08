@@ -33,4 +33,4 @@ All
 				%td= check_box_tag("members[#{member.name}]", labels)
 		= submit_tag 'Send Request', :id => 'request_sent'
 = button_to "Home", {controller: "home"}, id: "home_link"
-= button_to "Edit Tags", "/tags/index", id: "tags_link"
+= button_to "Edit Tags", "/tags", id: "tags_link", method: "get"
