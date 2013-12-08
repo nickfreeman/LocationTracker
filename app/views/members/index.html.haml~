@@ -1,9 +1,16 @@
 -#  This file is app/views/members/index.html.haml
 
+%link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
+
 -if not flash.empty?
 	= flash[:notice]
 
+
+%br
+%br
 %h1 Member to Member Query
+
+= render 'members/topbar'
 
 %p Select Tags:
 All
@@ -13,7 +20,7 @@ All
 	=check_box_tag("#{tag}", "#{tag}", false, :onclick => "checkTag(this)")
 
 
-%table#members
+%table.table.table-condensed#members
 	%thead
 		%tr
 			%th= link_to "Name", members_path(:sort => 'name'), :id => 'sort_name'
@@ -31,6 +38,12 @@ All
 				%td= member.role
 				%td= labels = Tags.find_all_by_user_id(member.id).map{|record| record.label}*", "
 				%td= check_box_tag("members[#{member.name}]", labels)
+<<<<<<< HEAD
 		= submit_tag 'Send Request', :id => 'request_sent'
-= button_to "Home", {controller: "home"}, id: "home_link"
-= button_to "Edit Tags", "/tags", id: "tags_link", method: "get"
+= button_to "Home", {controller: "home"}, id: "members_home_link", class: "btn"
+= button_to "Edit Tags", "/tags", id: "tags_link", method: "get", class: "btn"
+=======
+		.btn-group
+			= submit_tag 'Send Request', :id => 'request_sent', :class => 'btn btn-success'
+			= link_to "Edit Tags", "/tags", method: "get", :class => 'btn btn-default'
+>>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced

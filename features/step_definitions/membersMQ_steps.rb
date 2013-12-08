@@ -14,6 +14,11 @@ Then /I should see all members/ do
   end
 end 
 
+
+Then /I should see "(.*)" before "(.*)"/ do |first, second|
+  assert_match page.source, /#{first}.*#{second}.*/m
+end
+
 When /I click or check "members_all"/ do
   @users = User.all
   @users.each do |user|
@@ -21,5 +26,6 @@ When /I click or check "members_all"/ do
     step %{I check "members_#{s}"}
   end
 end
+
 
 
