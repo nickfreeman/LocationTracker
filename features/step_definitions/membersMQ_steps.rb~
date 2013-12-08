@@ -5,9 +5,6 @@ Given /the following users info exist/ do |users_table|
 end
 
 
-Then /I should see Successfully Sent/ do
-     step %{I should see "Successfully Sent"}
-end
 
 
 Then /I should see all members/ do 

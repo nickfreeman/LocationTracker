@@ -13,3 +13,7 @@ Then /I should see all members/ do
     page.has_content?(user.name)
   end
 end 
+
+Then /I should see "(.*)" before "(.*)"/ do |first, second|
+  assert_match page.source, /#{first}.*#{second}.*/m
+end

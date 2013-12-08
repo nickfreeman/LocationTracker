@@ -17,8 +17,10 @@ module NavigationHelpers
       '/'
     when /^the find my location page$/
       locations_path
+
     when /^the success page for "(.*)"$/
       success_members_path
+    
     when /^the Sign in page$/
       '/users/sign_in'
 

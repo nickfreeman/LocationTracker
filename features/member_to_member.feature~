@@ -14,7 +14,6 @@ Background: field member's information has been added to database
  | Yeung John Li  | liyeungjohn@yahoo.ca     | field | password | password 		|
  | James	  | james@berkeley.edu 	     | AHC   | password | password 		|
 
-
 Scenario: Clicking "Send Request" button and selecting "members_all" sends emails to all members
  Given I am on the members page
  When I check "members_all"
@@ -36,3 +35,21 @@ Scenario: Not selecting any members should report error message
  When I press "Send Request"
  Then I should be on the members page
  And I should see "No members available"
+
+Scenario: Name Sorting should work
+ Given I am on the members page
+ When I follow "sort_name" 
+ Then I should see "James" before "Yeung John Li"
+ And I should be on the members page
+
+Scenario: Email Sorting should work
+ Given I am on the members page
+ When I follow "sort_email" 
+ Then I should see "james@berkeley.edu" before "liyeungjohn@yahoo.ca"
+ And I should be on the members page
+
+Scenario: Role Sorting should work
+ Given I am on the members page
+ When I follow "sort_role" 
+ Then I should see "AHC" before "field"
+ And I should be on the members page
