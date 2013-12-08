@@ -25,7 +25,15 @@ class MembersController < ApplicationController
 			session[:sort_email] = 'ascend'
 		end
 	end
-	
+	if (params[:sort] == 'role')
+		if ((not session[:sort_role]) or session[:sort_role] == 'ascend')
+			@members = User.find(:all, :order => 'role ASC')
+			session[:sort_role] = 'descend'
+		else
+			@members = User.find(:all, :order => 'role DESC')
+			session[:sort_role] = 'ascend'
+		end
+	end	
 	
 	
   end

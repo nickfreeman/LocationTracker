@@ -25,7 +25,15 @@ class MembersController < ApplicationController
 			session[:sort_email] = 'ascend'
 		end
 	end
-	
+	if (params[:sort] == 'role')
+		if ((not session[:sort_role]) or session[:sort_role] == 'ascend')
+			@members = User.find(:all, :order => 'email ASC')
+			session[:sort_role] = 'descend'
+		else
+			@members = User.find(:all, :order => 'email DESC')
+			session[:sort_role] = 'ascend'
+		end
+	end	
 	
 	
   end
@@ -40,14 +48,14 @@ class MembersController < ApplicationController
 
 
   def email		
-    if params[:members_all]
-      @members = User.all
-    else
+    #if params[:members_all]
+      #@members = User.all
+    #else
       @members_temp = (params[:members]? params[:members].keys : [])
 		  @members = User.find(:all, :conditions => {:name => @members_temp})
-    end
+    #end
 
-		puts @members.length
+		#puts @members.length
 		if @members.length == 0
 			flash[:notice] = "No members available"
 			redirect_to "/members"
