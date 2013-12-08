@@ -38,4 +38,4 @@ end
 
 Then /I should see all of the locations/ do
   page.find('#map-canvas')
-end
+do

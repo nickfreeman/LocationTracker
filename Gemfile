@@ -24,6 +24,7 @@ end
 group :test do
   gem 'cucumber-rails', :require => false
   gem 'factory_girl'
+  gem 'timecop'
 end
 
 group :production do

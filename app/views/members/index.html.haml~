@@ -1,5 +1,9 @@
 -#  This file is app/views/members/index.html.haml
 
+%link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", :rel => "stylesheet"}
+%link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}/
+%link{:href => "http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600", :rel => "stylesheet"}/
+
 -if not flash.empty?
 	= flash[:notice]
 
@@ -32,5 +36,5 @@ All
 				%td= labels = Tags.find_all_by_user_id(member.id).map{|record| record.label}*", "
 				%td= check_box_tag("members[#{member.name}]", labels)
 		= submit_tag 'Send Request', :id => 'request_sent'
-= button_to "Home", {controller: "home"}, id: "home_link"
-= button_to "Edit Tags", "/tags", id: "tags_link", method: "get"
+= button_to "Home", {controller: "home"}, id: "members_home_link", class: "btn", style: {float:left}
+= button_to "Edit Tags", "/tags", id: "tags_link", method: "get", class: "btn", style: {float:left}

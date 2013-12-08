@@ -14,13 +14,13 @@ Given I have created users
 Scenario: Pick a single group
 Given I am logged in and on the map page
 When I fill in "search_name" with "group 1"
-And I press "search_submit"
+And I press "search_name_submit"
 Then I should only see locations with group "group 1"
 
 
 Scenario: See all locations
 Given I am logged in and on the map page
 When I fill in "search_name" with ""
-And I press "search_submit"
+And I press "search_name_submit"
 Then I should see all of the locations
 
