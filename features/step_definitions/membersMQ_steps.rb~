@@ -5,9 +5,6 @@ Given /the following users info exist/ do |users_table|
 end
 
 
-Then /I should see Successfully Sent/ do
-     step %{I should see "Successfully Sent"}
-end
 
 
 Then /I should see all members/ do 
@@ -16,3 +13,11 @@ Then /I should see all members/ do
     page.has_content?(user.name)
   end
 end 
+
+When /I click or check "members_all"/ do
+  @users = User.all
+  @users.each do |user|
+    s = user.name.gsub!(" ", "_")
+    step %{I check "members_#{s}"}
+  end
+end

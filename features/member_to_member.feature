@@ -17,7 +17,7 @@ Background: field member's information has been added to database
 
 Scenario: Clicking "Send Request" button and selecting "members_all" sends emails to all members
  Given I am on the members page
- When I check "members_all"
+ When I click or check "members_all"
  And I press "Send Request"
  Then I should be on the success page for "all"
  And I should see "Successfully Sent"

@@ -1,9 +1,10 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/nickfreeman/code/LocationTracker/app/models/user.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/models/user.rb": [
         1,
         null,
+        1,
         1,
         null,
         null,
@@ -16,16 +17,16 @@
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/controllers/application_controller.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/helpers/application_helper.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/helpers/home_helper.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/helpers/home_helper.rb": [
         1,
         1,
         6,
@@ -40,11 +41,11 @@
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/helpers/tags_helper.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/helpers/tags_helper.rb": [
         1,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/controllers/home_controller.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/controllers/home_controller.rb": [
         1,
         null,
         1,
@@ -52,11 +53,11 @@
         null,
         1,
         null,
-        3,
-        3,
-        3,
+        5,
+        5,
+        5,
         null,
-        3,
+        5,
         2,
         1,
         1,
@@ -70,8 +71,20 @@
         null,
         1,
         1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
         null,
         0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null,
         null,
         null,
@@ -85,7 +98,7 @@
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/controllers/locations_controller.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/controllers/locations_controller.rb": [
         1,
         null,
         1,
@@ -94,7 +107,6 @@
         null,
         null,
         1,
-        null,
         3,
         null,
         3,
@@ -114,10 +126,6 @@
         0,
         0,
         null,
-        null,
-        null,
-        null,
-        1,
         null,
         null,
         null,
@@ -158,22 +166,24 @@
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/models/location.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/models/location.rb": [
         1,
+        1,
+        null,
         1,
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/controllers/members_controller.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/controllers/members_controller.rb": [
         1,
         null,
         1,
         null,
         null,
         1,
-        5,
+        4,
         null,
-        5,
+        4,
         0,
         0,
         0,
@@ -183,7 +193,7 @@
         null,
         null,
         null,
-        5,
+        4,
         0,
         0,
         0,
@@ -216,28 +226,28 @@
         null,
         null,
         3,
+        1,
+        1,
+        null,
+        2,
+        6,
+        null,
+        2,
+        null,
+        null,
+        null,
+        1,
+        2,
+        0,
+        null,
         2,
         2,
         null,
-        1,
-        1,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
         null,
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/models/member.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/models/member.rb": [
         1,
         1,
         1,
@@ -254,7 +264,7 @@
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/controllers/tags_controller.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/controllers/tags_controller.rb": [
         1,
         null,
         1,
@@ -281,19 +291,19 @@
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/mailers/user_mailer.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/mailers/user_mailer.rb": [
         1,
         1,
         null,
         1,
-        1,
-        1,
-        1,
+        6,
+        6,
+        6,
         null,
         null,
         null
       ],
-      "/Users/nickfreeman/code/LocationTracker/app/models/tags.rb": [
+      "/home/saasbook/Documents/LocationTracker/app/models/tags.rb": [
         1,
         null,
         1,
@@ -301,7 +311,7 @@
         null
       ]
     },
-    "timestamp": 1386131457
+    "timestamp": 1386542646
   },
   "RSpec": {
     "coverage": {
