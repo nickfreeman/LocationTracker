@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   def show()
 
-    @autocomplete_people = User.all.map(&:name)
+    @autocomplete_people = (User.all.map(&:name) + Tags.all.map(&:label)).uniq
   	@locations = [[37.488902,-122.230657, 'HeadQuarter','']]
   	@tracing = false
     
@@ -23,8 +23,20 @@ class HomeController < ApplicationController
 
         if session[:search_time] == nil or session[:search_time] == "" or session[:search_time] == 0
           @geolocations = Location.where("name = ?", params[:search_name])
+	  if @geolocations == nil
+	      tags = Tags.where("label = ?", params[:search_name])
+	      tags.each do |tag|	
+	      	@geolocations += Location.where("name = ?", tag.user_id)
+	      end
+	  end
         else
           @geolocations = Location.where(:updated_at => session[:search_time].to_i.minutes.ago..Time.now).where("name = ?", params[:search_name])
+	  if @geolocations == nil
+	      tags = Tags.where("label = ?", params[:search_name])
+	      tags.each do |tag|
+		@geolocations += Location.where(:updated_at => session[:search_time].to_i.minutes.ago..Time.now).where("name = ?", tag.user_id)
+	      end
+	  end
         end
 
         #@geolocations = Location.where("name = ?", params[:search_name])

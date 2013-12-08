@@ -6,7 +6,6 @@ class LocationsController < ApplicationController
 	end
 
 	def index
-		#TODO create a map that shows the corresponding stuff
 		@locations = Location.all
 		#Sorting the list of locations ascending the first click then by descending the second click
 		if (params[:sort] == 'name')
@@ -27,10 +26,6 @@ class LocationsController < ApplicationController
 				session[:sort_time] = 'ascend'
 			end
 		end
-	end
-	
-	def new
-		#TODO
 	end
 
 	def create

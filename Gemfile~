@@ -18,10 +18,12 @@ group :development, :test do
   gem 'launchy'
   gem 'actionmailer'
   gem 'simplecov'
+	gem 'table_print'
 end
 
 group :test do
   gem 'cucumber-rails', :require => false
+  gem 'factorygirl'
 end
 
 group :production do
@@ -62,3 +64,5 @@ gem 'devise'
 
 #use Haml for templates
 gem 'haml'
+
+gem 'twitter-typeahead-rails'
