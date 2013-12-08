@@ -22,7 +22,7 @@ describe LocationsController do
 
 		it "should call update and change values" do
 			#login_as(@user, :scope => :user)
-			sign_in @user
+			sign_in FactoryGirl.create(:user)
 			@location = Location.create!({:longitude => 5.0})
 			put :update, {:id => @location.id, :latitude => 3.23, :longitude => 3432.3}
 			@get_location = Location.find(@location.id)
@@ -33,7 +33,7 @@ describe LocationsController do
 	describe "create location", js: true do
 
 		it 'should create a location to be found' do
-			sign_in @user
+			sign_in FactoryGirl.create(:user)
 			post :create, {:id => 4, :latitude => 5.9, :longitude => 23.9}
 			@location = Location.find(4)
 			expect(@location.latitude).should == 5.9
