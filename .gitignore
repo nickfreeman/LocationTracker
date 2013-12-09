@@ -16,3 +16,6 @@
 
 # Ignore editor-generated backup copies.
 .*~
+
+# Ignore test coverage
+coverage/*
