@@ -41,6 +41,8 @@ Scenario: Name Sorting should work
  Given I am on the members page
  When I follow "sort_name" 
  Then I should see "James" before "Yeung John Li"
+ When I follow "sort_name" 
+ Then I should see "Yeung John Li" before "James"
  And I should be on the members page
 
 Scenario: Email Sorting should work
@@ -48,11 +50,17 @@ Scenario: Email Sorting should work
  When I follow "sort_email" 
  Then I should see "james@berkeley.edu" before "liyeungjohn@yahoo.ca"
  And I should be on the members page
+ When I follow "sort_email" 
+ Then I should see "liyeungjohn@yahoo.ca" before "james@berkeley.edu" 
+ And I should be on the members page
 
 Scenario: Role Sorting should work
  Given I am on the members page
  When I follow "sort_role" 
  Then I should see "AHC" before "field"
+ And I should be on the members page
+ When I follow "sort_role" 
+ Then I should see "field" before "AHC"
  And I should be on the members page
 
 Scenario: Creating and Deleting a tag

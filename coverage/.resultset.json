@@ -1,11 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/models/user.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/models/user.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         null,
         1,
@@ -21,28 +17,16 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/application_controller.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/controllers/application_controller.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         1,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/helpers/home_helper.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/helpers/application_helper.rb": [
         1,
         null
       ],
       "/home/saasbook/169/LocationTracker/app/helpers/home_helper.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         1,
         0,
@@ -57,19 +41,11 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/helpers/tags_helper.rb": [
-        1,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/home_controller.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/helpers/tags_helper.rb": [
         1,
         null
       ],
       "/home/saasbook/169/LocationTracker/app/controllers/home_controller.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         null,
         1,
@@ -77,42 +53,11 @@
         null,
         1,
         null,
-<<<<<<< HEAD
-        7,
-        7,
-        7,
-        null,
-        7,
-=======
-<<<<<<< HEAD
-        0,
-=======
-        5,
-        5,
-        5,
-        null,
-        5,
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        2,
-        1,
-        1,
-        1,
-        null,
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
         0,
         0,
         0,
-<<<<<<< HEAD
-=======
+        null,
+        0,
         0,
         0,
         0,
@@ -126,50 +71,22 @@
         null,
         0,
         0,
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        null,
-        null,
         null,
         0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
         null,
         null,
         null,
         0,
         null,
         null,
-        null,
-        null,
         0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        10,
         null,
         null,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/locations_controller.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/controllers/locations_controller.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         null,
         1,
@@ -178,15 +95,7 @@
         null,
         null,
         1,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        null,
         0,
-=======
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        3,
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
         null,
         0,
         0,
@@ -245,11 +154,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/models/location.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/models/location.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         1,
         null,
@@ -257,53 +162,41 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/members_controller.rb": [
-=======
       "/home/saasbook/169/LocationTracker/app/controllers/members_controller.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
         1,
         null,
         1,
         null,
         null,
         1,
-<<<<<<< HEAD
-        9,
+        14,
         null,
-        9,
+        14,
+        2,
         1,
         1,
-        1,
-=======
-        8,
         null,
-        8,
-        0,
-        0,
-        0,
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-<<<<<<< HEAD
-        9,
         1,
         1,
+        null,
+        null,
+        null,
+        14,
+        2,
         1,
-=======
-        8,
-        0,
-        0,
-        0,
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
+        null,
+        14,
+        2,
+        1,
+        1,
+        null,
+        1,
+        1,
         null,
         null,
         null,
@@ -350,333 +243,23 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/models/member.rb": [
-=======
-      "/home/saasbook/Documents/LocationTracker/app/models/member.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/tags_controller.rb": [
-=======
-      "/home/saasbook/Documents/LocationTracker/app/controllers/tags_controller.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        1,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null,
-        1,
-        1,
-        1,
-        2,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        5,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/mailers/user_mailer.rb": [
-=======
-      "/home/saasbook/Documents/LocationTracker/app/mailers/user_mailer.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        1,
-        1,
-        null,
-        1,
-        6,
-        6,
-        6,
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/home/saasbook/finalProject/LocationTracker/app/models/tags.rb": [
-=======
-      "/home/saasbook/Documents/LocationTracker/app/models/tags.rb": [
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-        1,
-        null,
-        1,
-        1,
-        null
-      ]
-    },
-<<<<<<< HEAD
-    "timestamp": 1386542043
-=======
-    "timestamp": 1386544413
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
-  },
-  "RSpec": {
-    "coverage": {
-      "/home/saasbook/finalProject/LocationTracker/app/models/user.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/helpers/home_helper.rb": [
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/helpers/tags_helper.rb": [
-        1,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/home_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        5,
-        5,
-        5,
-        null,
-        5,
-        5,
-        3,
-        1,
-        1,
-        null,
-        2,
-        2,
-        null,
-        null,
-        null,
-        null,
-        2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        2,
-        null,
-        null,
-        15,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/locations_controller.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null
-      ],
-<<<<<<< HEAD
       "/home/saasbook/169/LocationTracker/app/models/member.rb": [
-=======
-      "/home/saasbook/finalProject/LocationTracker/app/models/location.rb": [
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
         1,
         1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/members_controller.rb": [
-        1,
-        null,
         1,
         null,
         null,
         1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
+        0,
         null,
         null,
         1,
         0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
       "/home/saasbook/169/LocationTracker/app/controllers/tags_controller.rb": [
         1,
         null,
@@ -699,73 +282,24 @@
         0,
         null,
         null,
-=======
-      "/home/saasbook/finalProject/LocationTracker/app/models/member.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
         0,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
       "/home/saasbook/169/LocationTracker/app/mailers/user_mailer.rb": [
-=======
-      "/home/saasbook/finalProject/LocationTracker/app/controllers/tags_controller.rb": [
+        1,
         1,
         null,
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
         1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
+        6,
+        6,
+        6,
         null,
         null,
         null
       ],
-      "/home/saasbook/finalProject/LocationTracker/app/mailers/user_mailer.rb": [
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
       "/home/saasbook/169/LocationTracker/app/models/tags.rb": [
-=======
-      "/home/saasbook/finalProject/LocationTracker/app/models/tags.rb": [
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
         1,
         null,
         1,
@@ -773,14 +307,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1386546080
-=======
-<<<<<<< HEAD
-    "timestamp": 1386545719
-=======
-    "timestamp": 1386539491
->>>>>>> 5e1778c20ee825b9a3b68ac02e917841cbbc900e
->>>>>>> 21cb876f8fcda971bb6f35ef57d059bb751cbced
+    "timestamp": 1386550038
   }
 }
