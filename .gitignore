@@ -20,5 +20,5 @@
 # Ignore test coverage
 coverage/*.json
 coverage/*.html
-
+coverage/assets
 coverage/.resultset.json
