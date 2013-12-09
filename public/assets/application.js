@@ -10306,15 +10306,18 @@ function initialize(locations){
 	//creating a way to associate names with a color to have unique color identifier on the map
 	var color = new Color();
 	var counter = 0;
-	
+	var person_number = {}
+
 	for (i = 0; i < locations.length; i++) {
 	  if(!(locations[i][2] in color.person_to_color)){
 		  color.person_to_color[locations[i][2]] = color.colorlist[counter];
 		  counter = (counter + 1)%color.colorlist.length;
 	  }
-
-	  var image = selecting_color(color.person_to_color[locations[i][2]]);
- 
+	  if (!(locations[i][2] in person_number)){
+		person_number[locations[i][2]] = 0
+	  }
+	  var image = selecting_color(person_number[locations[i][2]],color.person_to_color[locations[i][2]]);
+ 	  person_number[locations[i][2]]++
 	  marker = new google.maps.Marker({position: new google.maps.LatLng(locations[i][0], locations[i][1]),
 		map: map, icon: image});
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -10330,8 +10333,9 @@ function initialize(locations){
 
 //developers.google.com/chart/infographics/doc/dynamic_icon?csw=1#pins for reference
 
-var selecting_color = function(color){
-	return "https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=camping|" + color;
+var selecting_color = function(number,color){
+	return "https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=" + number + "|"+color+"|000000"
+	//return "https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=camping|" + color;
 }
 
 var Color = function(){
