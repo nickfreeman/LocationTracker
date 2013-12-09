@@ -40,5 +40,5 @@ All
 				%td= check_box_tag("members[#{member.name}]", labels)
 		.btn-group
 			= submit_tag 'Send Request', :id => 'request_sent', :class => 'btn btn-success'
-			= link_to 'Edit Tags', "/tags", :id => 'edit_tags', method: "get", :class => 'btn btn-default'
+			= link_to 'Edit Tags', "/tags", method: "get", :class => 'btn btn-default'
 
