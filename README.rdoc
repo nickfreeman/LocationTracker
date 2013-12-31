@@ -1,4 +1,5 @@
-== Welcome to BAMRU Location Tracker - The Motivation
+== Welcome to BAMRU Location Tracker 
+== The Motivation
 
 Bay Area Mountain Rescue Unit (BAMRU) sends rescue teams out to search areas and found lost or injured hikers and climbers. During a search, an at-home-coordinator keeps track of the locations of the teams with constant phone calls and paper maps. Our task was to make a web application to do this location tracking for them.
 
@@ -6,21 +7,6 @@ Bay Area Mountain Rescue Unit (BAMRU) sends rescue teams out to search areas and
 == Our Solution
 
 LocationTracker is a tool for storing the locations of the BAMRU volunteers and allows them to send their current locations to the coordinator so that he can better manage the operation and prevent people from going missing.
-
-1. At the command prompt, create a new Rails application:
-       <tt>rails new myapp</tt> (where <tt>myapp</tt> is the application name)
-
-2. Change directory to <tt>myapp</tt> and start the web server:
-       <tt>cd myapp; rails server</tt> (run with --help for options)
-
-3. Go to http://localhost:3000/ and you'll see:
-       "Welcome aboard: You're riding Ruby on Rails!"
-
-4. Follow the guidelines to start developing your application. You can find
-the following resources handy:
-
-* The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
-* Ruby on Rails Tutorial Book: http://www.railstutorial.org/
 
 
 == Features
